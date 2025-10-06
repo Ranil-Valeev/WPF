@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7a5401ba61a845879814a877a3765c97" Name="Diagram1">
+        <EntityTypeShape EntityType="УниверситетModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.User" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.Категория" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.Предмет" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.Преподы" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.Проведение_предмета" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="УниверситетModel.Цикл" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="УниверситетModel.FK_Преподы_Категория" ManuallyRouted="false" />
+        <AssociationConnector Association="УниверситетModel.FK_Предмет_Цикл" ManuallyRouted="false" />
+        <AssociationConnector Association="УниверситетModel.FK_Проведение_предмета_Предмет" ManuallyRouted="false" />
+        <AssociationConnector Association="УниверситетModel.FK_Проведение_предмета_Преподы" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

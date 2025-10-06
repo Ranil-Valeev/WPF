@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="УниверситетModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID_User" />
+    </Key>
+    <Property Name="ID_User" Type="Int32" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Категория">
+    <Key>
+      <PropertyRef Name="ID_категории" />
+    </Key>
+    <Property Name="Категория1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_категории" Type="Int32" Nullable="false" />
+    <Property Name="оклад" Type="Double" />
+    <NavigationProperty Name="Преподы" Relationship="Self.FK_Преподы_Категория" FromRole="Категория" ToRole="Преподы" />
+  </EntityType>
+  <EntityType Name="Предмет">
+    <Key>
+      <PropertyRef Name="ID_предмета" />
+    </Key>
+    <Property Name="Название_предмета" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_Цикла" Type="Int32" />
+    <Property Name="Часы" Type="Int32" />
+    <Property Name="ID_предмета" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Цикл" Relationship="Self.FK_Предмет_Цикл" FromRole="Предмет" ToRole="Цикл" />
+    <NavigationProperty Name="Проведение_предмета" Relationship="Self.FK_Проведение_предмета_Предмет" FromRole="Предмет" ToRole="Проведение_предмета" />
+  </EntityType>
+  <EntityType Name="Преподы">
+    <Key>
+      <PropertyRef Name="ID_препода" />
+    </Key>
+    <Property Name="Фамилия" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID_категории" Type="Int32" />
+    <Property Name="ID_препода" Type="Int32" Nullable="false" />
+    <Property Name="улица" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="дом" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="кв" Type="Int32" />
+    <NavigationProperty Name="Категория" Relationship="Self.FK_Преподы_Категория" FromRole="Преподы" ToRole="Категория" />
+    <NavigationProperty Name="Проведение_предмета" Relationship="Self.FK_Проведение_предмета_Преподы" FromRole="Преподы" ToRole="Проведение_предмета" />
+  </EntityType>
+  <EntityType Name="Проведение_предмета">
+    <Key>
+      <PropertyRef Name="ID_нагрузки" />
+    </Key>
+    <Property Name="ID_предмета" Type="Int32" />
+    <Property Name="ID_препода" Type="Int32" />
+    <Property Name="ID_нагрузки" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Предмет" Relationship="Self.FK_Проведение_предмета_Предмет" FromRole="Проведение_предмета" ToRole="Предмет" />
+    <NavigationProperty Name="Преподы" Relationship="Self.FK_Проведение_предмета_Преподы" FromRole="Проведение_предмета" ToRole="Преподы" />
+  </EntityType>
+  <EntityType Name="Цикл">
+    <Key>
+      <PropertyRef Name="ID_Цикла" />
+    </Key>
+    <Property Name="Название" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID_Цикла" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Предмет" Relationship="Self.FK_Предмет_Цикл" FromRole="Цикл" ToRole="Предмет" />
+  </EntityType>
+  <Association Name="FK_Преподы_Категория">
+    <End Role="Категория" Type="Self.Категория" Multiplicity="0..1" />
+    <End Role="Преподы" Type="Self.Преподы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Категория">
+        <PropertyRef Name="ID_категории" />
+      </Principal>
+      <Dependent Role="Преподы">
+        <PropertyRef Name="ID_категории" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Предмет_Цикл">
+    <End Role="Цикл" Type="Self.Цикл" Multiplicity="0..1" />
+    <End Role="Предмет" Type="Self.Предмет" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Цикл">
+        <PropertyRef Name="ID_Цикла" />
+      </Principal>
+      <Dependent Role="Предмет">
+        <PropertyRef Name="ID_Цикла" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Проведение_предмета_Предмет">
+    <End Role="Предмет" Type="Self.Предмет" Multiplicity="0..1" />
+    <End Role="Проведение_предмета" Type="Self.Проведение_предмета" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Предмет">
+        <PropertyRef Name="ID_предмета" />
+      </Principal>
+      <Dependent Role="Проведение_предмета">
+        <PropertyRef Name="ID_предмета" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Проведение_предмета_Преподы">
+    <End Role="Преподы" Type="Self.Преподы" Multiplicity="0..1" />
+    <End Role="Проведение_предмета" Type="Self.Проведение_предмета" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Преподы">
+        <PropertyRef Name="ID_препода" />
+      </Principal>
+      <Dependent Role="Проведение_предмета">
+        <PropertyRef Name="ID_препода" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="УниверситетEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Категория" EntityType="Self.Категория" />
+    <EntitySet Name="Предмет" EntityType="Self.Предмет" />
+    <EntitySet Name="Преподы" EntityType="Self.Преподы" />
+    <EntitySet Name="Проведение_предмета" EntityType="Self.Проведение_предмета" />
+    <EntitySet Name="Цикл" EntityType="Self.Цикл" />
+    <AssociationSet Name="FK_Преподы_Категория" Association="Self.FK_Преподы_Категория">
+      <End Role="Категория" EntitySet="Категория" />
+      <End Role="Преподы" EntitySet="Преподы" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Предмет_Цикл" Association="Self.FK_Предмет_Цикл">
+      <End Role="Цикл" EntitySet="Цикл" />
+      <End Role="Предмет" EntitySet="Предмет" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Проведение_предмета_Предмет" Association="Self.FK_Проведение_предмета_Предмет">
+      <End Role="Предмет" EntitySet="Предмет" />
+      <End Role="Проведение_предмета" EntitySet="Проведение_предмета" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Проведение_предмета_Преподы" Association="Self.FK_Проведение_предмета_Преподы">
+      <End Role="Преподы" EntitySet="Преподы" />
+      <End Role="Проведение_предмета" EntitySet="Проведение_предмета" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(УниверситетModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(УниверситетModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

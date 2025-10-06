@@ -1,0 +1,59 @@
+﻿<Window x:Class="Университет.Teachers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Университет"
+        mc:Ignorable="d"
+        Title="Teachers" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" >
+            <TextBlock Text="Преподаватели" FontSize="26" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock Text="Введите фамилию" Margin="10,0" />
+                <TextBox x:Name="SerName" Margin="10,0" Width="150" />
+                <TextBlock Text="Категория" Margin="10,0" />
+                <ComboBox x:Name="Category" Width="120" SelectionChanged="Category_SelectionChanged"/>
+                <TextBlock Text="Сортировать по:" Margin="10,0"/>
+                <ComboBox x:Name="Sort" Width="120" Margin="10,0" SelectionChanged="Sort_SelectionChanged">
+                    <ComboBoxItem Content="По окладу (возрастание)"/>
+                    <ComboBoxItem Content="По окладу (убывание)"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <ListBox Grid.Row="1" x:Name="Teacher">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0,0,0,10">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Фамилия:" Margin="10,0" />
+                            <TextBlock x:Name="SerN" Text="{Binding Фамилия}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Имя:" Margin="10,0" />
+                            <TextBlock x:Name="Name" Text="{Binding Имя}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Отчество:" Margin="10,0" />
+                            <TextBlock x:Name="NameO" Text="{Binding Отчество}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Категория:" Margin="10,0" />
+                            <TextBlock x:Name="Category1" Text="{Binding Категория}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Оклад:" Margin="10,0" />
+                            <TextBlock x:Name="Oclad" Text="{Binding Оклад}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="SledSTR" Content="Нагрузка" HorizontalAlignment="Center" VerticalAlignment="Center" Click="SledSTR_Click" Grid.Row="2" Height="20" Width="100" Background="Black" Foreground="White"  />
+    </Grid>
+</Window>
