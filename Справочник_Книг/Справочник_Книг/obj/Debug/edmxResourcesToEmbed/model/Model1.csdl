@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Справочник_книгModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Авторы">
+    <Key>
+      <PropertyRef Name="ID_Автора" />
+    </Key>
+    <Property Name="ID_Автора" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Фамилия" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Имя" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Отчество" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_Рождения" Type="DateTime" Precision="0" />
+    <Property Name="Страна" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="История" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Книги" Relationship="Self.FK__Книги__ID_Автора__46E78A0C" FromRole="Авторы" ToRole="Книги" />
+  </EntityType>
+  <EntityType Name="Жанры">
+    <Key>
+      <PropertyRef Name="ID_Жанра" />
+    </Key>
+    <Property Name="ID_Жанра" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Книги" Relationship="Self.FK__Книги__ID_Жанра__47DBAE45" FromRole="Жанры" ToRole="Книги" />
+  </EntityType>
+  <EntityType Name="Книги">
+    <Key>
+      <PropertyRef Name="ID_Книги" />
+    </Key>
+    <Property Name="ID_Книги" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_Автора" Type="Int32" Nullable="false" />
+    <Property Name="ID_Жанра" Type="Int32" Nullable="false" />
+    <Property Name="Год_Издания" Type="Int32" />
+    <Property Name="Описание" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Авторы" Relationship="Self.FK__Книги__ID_Автора__46E78A0C" FromRole="Книги" ToRole="Авторы" />
+    <NavigationProperty Name="Жанры" Relationship="Self.FK__Книги__ID_Жанра__47DBAE45" FromRole="Книги" ToRole="Жанры" />
+    <NavigationProperty Name="Оценки" Relationship="Self.FK__Оценки__ID_Книги__5070F446" FromRole="Книги" ToRole="Оценки" />
+    <NavigationProperty Name="Прочитанные_Книги" Relationship="Self.FK__Прочитанн__ID_Кн__619B8048" FromRole="Книги" ToRole="Прочитанные_Книги" />
+  </EntityType>
+  <EntityType Name="Оценки">
+    <Key>
+      <PropertyRef Name="ID_Оценки" />
+    </Key>
+    <Property Name="ID_Оценки" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Пользователя" Type="Int32" Nullable="false" />
+    <Property Name="ID_Книги" Type="Int32" Nullable="false" />
+    <Property Name="Оценка" Type="Int32" />
+    <Property Name="Комментарий" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Дата" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Книги" Relationship="Self.FK__Оценки__ID_Книги__5070F446" FromRole="Оценки" ToRole="Книги" />
+    <NavigationProperty Name="Пользователи" Relationship="Self.FK__Оценки__ID_Польз__4F7CD00D" FromRole="Оценки" ToRole="Пользователи" />
+  </EntityType>
+  <EntityType Name="Пользователи">
+    <Key>
+      <PropertyRef Name="ID_Пользователя" />
+    </Key>
+    <Property Name="ID_Пользователя" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Логин" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Пароль" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Электронная_Почта" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Телефон" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Оценки" Relationship="Self.FK__Оценки__ID_Польз__4F7CD00D" FromRole="Пользователи" ToRole="Оценки" />
+    <NavigationProperty Name="Прочитанные_Книги" Relationship="Self.FK__Прочитанн__ID_По__60A75C0F" FromRole="Пользователи" ToRole="Прочитанные_Книги" />
+  </EntityType>
+  <EntityType Name="Прочитанные_Книги">
+    <Key>
+      <PropertyRef Name="ID_Списка" />
+    </Key>
+    <Property Name="ID_Списка" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Пользователя" Type="Int32" Nullable="false" />
+    <Property Name="ID_Книги" Type="Int32" Nullable="false" />
+    <Property Name="Дата_Прочтения" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Книги" Relationship="Self.FK__Прочитанн__ID_Кн__619B8048" FromRole="Прочитанные_Книги" ToRole="Книги" />
+    <NavigationProperty Name="Пользователи" Relationship="Self.FK__Прочитанн__ID_По__60A75C0F" FromRole="Прочитанные_Книги" ToRole="Пользователи" />
+  </EntityType>
+  <Association Name="FK__Книги__ID_Автора__46E78A0C">
+    <End Role="Авторы" Type="Self.Авторы" Multiplicity="1" />
+    <End Role="Книги" Type="Self.Книги" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Авторы">
+        <PropertyRef Name="ID_Автора" />
+      </Principal>
+      <Dependent Role="Книги">
+        <PropertyRef Name="ID_Автора" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Книги__ID_Жанра__47DBAE45">
+    <End Role="Жанры" Type="Self.Жанры" Multiplicity="1" />
+    <End Role="Книги" Type="Self.Книги" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Жанры">
+        <PropertyRef Name="ID_Жанра" />
+      </Principal>
+      <Dependent Role="Книги">
+        <PropertyRef Name="ID_Жанра" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Оценки__ID_Книги__5070F446">
+    <End Role="Книги" Type="Self.Книги" Multiplicity="1" />
+    <End Role="Оценки" Type="Self.Оценки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Книги">
+        <PropertyRef Name="ID_Книги" />
+      </Principal>
+      <Dependent Role="Оценки">
+        <PropertyRef Name="ID_Книги" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Прочитанн__ID_Кн__619B8048">
+    <End Role="Книги" Type="Self.Книги" Multiplicity="1" />
+    <End Role="Прочитанные_Книги" Type="Self.Прочитанные_Книги" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Книги">
+        <PropertyRef Name="ID_Книги" />
+      </Principal>
+      <Dependent Role="Прочитанные_Книги">
+        <PropertyRef Name="ID_Книги" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Оценки__ID_Польз__4F7CD00D">
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="1" />
+    <End Role="Оценки" Type="Self.Оценки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пользователи">
+        <PropertyRef Name="ID_Пользователя" />
+      </Principal>
+      <Dependent Role="Оценки">
+        <PropertyRef Name="ID_Пользователя" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Прочитанн__ID_По__60A75C0F">
+    <End Role="Пользователи" Type="Self.Пользователи" Multiplicity="1" />
+    <End Role="Прочитанные_Книги" Type="Self.Прочитанные_Книги" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пользователи">
+        <PropertyRef Name="ID_Пользователя" />
+      </Principal>
+      <Dependent Role="Прочитанные_Книги">
+        <PropertyRef Name="ID_Пользователя" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Справочник_книгEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Авторы" EntityType="Self.Авторы" />
+    <EntitySet Name="Жанры" EntityType="Self.Жанры" />
+    <EntitySet Name="Книги" EntityType="Self.Книги" />
+    <EntitySet Name="Оценки" EntityType="Self.Оценки" />
+    <EntitySet Name="Пользователи" EntityType="Self.Пользователи" />
+    <EntitySet Name="Прочитанные_Книги" EntityType="Self.Прочитанные_Книги" />
+    <AssociationSet Name="FK__Книги__ID_Автора__46E78A0C" Association="Self.FK__Книги__ID_Автора__46E78A0C">
+      <End Role="Авторы" EntitySet="Авторы" />
+      <End Role="Книги" EntitySet="Книги" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Книги__ID_Жанра__47DBAE45" Association="Self.FK__Книги__ID_Жанра__47DBAE45">
+      <End Role="Жанры" EntitySet="Жанры" />
+      <End Role="Книги" EntitySet="Книги" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Оценки__ID_Книги__5070F446" Association="Self.FK__Оценки__ID_Книги__5070F446">
+      <End Role="Книги" EntitySet="Книги" />
+      <End Role="Оценки" EntitySet="Оценки" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Прочитанн__ID_Кн__619B8048" Association="Self.FK__Прочитанн__ID_Кн__619B8048">
+      <End Role="Книги" EntitySet="Книги" />
+      <End Role="Прочитанные_Книги" EntitySet="Прочитанные_Книги" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Оценки__ID_Польз__4F7CD00D" Association="Self.FK__Оценки__ID_Польз__4F7CD00D">
+      <End Role="Пользователи" EntitySet="Пользователи" />
+      <End Role="Оценки" EntitySet="Оценки" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Прочитанн__ID_По__60A75C0F" Association="Self.FK__Прочитанн__ID_По__60A75C0F">
+      <End Role="Пользователи" EntitySet="Пользователи" />
+      <End Role="Прочитанные_Книги" EntitySet="Прочитанные_Книги" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Справочник_книгModelContainer" CdmEntityContainer="Справочник_книгEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Справочник_книгModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Авторы">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Авторы">
+        <MappingFragment StoreEntitySet="Авторы">
+          <ScalarProperty Name="ID_Автора" ColumnName="ID_Автора" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Дата_Рождения" ColumnName="Дата_Рождения" />
+          <ScalarProperty Name="Страна" ColumnName="Страна" />
+          <ScalarProperty Name="История" ColumnName="История" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Жанры">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Жанры">
+        <MappingFragment StoreEntitySet="Жанры">
+          <ScalarProperty Name="ID_Жанра" ColumnName="ID_Жанра" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Книги">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Книги">
+        <MappingFragment StoreEntitySet="Книги">
+          <ScalarProperty Name="ID_Книги" ColumnName="ID_Книги" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="ID_Автора" ColumnName="ID_Автора" />
+          <ScalarProperty Name="ID_Жанра" ColumnName="ID_Жанра" />
+          <ScalarProperty Name="Год_Издания" ColumnName="Год_Издания" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Оценки">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Оценки">
+        <MappingFragment StoreEntitySet="Оценки">
+          <ScalarProperty Name="ID_Оценки" ColumnName="ID_Оценки" />
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+          <ScalarProperty Name="ID_Книги" ColumnName="ID_Книги" />
+          <ScalarProperty Name="Оценка" ColumnName="Оценка" />
+          <ScalarProperty Name="Комментарий" ColumnName="Комментарий" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователи">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Пользователи">
+        <MappingFragment StoreEntitySet="Пользователи">
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Электронная_Почта" ColumnName="Электронная_Почта" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Прочитанные_Книги">
+      <EntityTypeMapping TypeName="Справочник_книгModel.Прочитанные_Книги">
+        <MappingFragment StoreEntitySet="Прочитанные_Книги">
+          <ScalarProperty Name="ID_Списка" ColumnName="ID_Списка" />
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+          <ScalarProperty Name="ID_Книги" ColumnName="ID_Книги" />
+          <ScalarProperty Name="Дата_Прочтения" ColumnName="Дата_Прочтения" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
