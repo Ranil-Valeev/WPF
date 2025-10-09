@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae866009044044459308e0d2625fc013" Name="Diagram1">
+        <EntityTypeShape EntityType="Справочник_книгModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Авторы" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Жанры" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Книги" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Оценки" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Пользователи" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Справочник_книгModel.Прочитанные_Книги" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Книги__ID_Автора__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Книги__ID_Жанра__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Оценки__ID_Книги__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Прочитанн__ID_Кн__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Оценки__ID_Польз__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Справочник_книгModel.FK__Прочитанн__ID_По__60A75C0F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
