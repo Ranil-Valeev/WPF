@@ -1,0 +1,31 @@
+﻿<Page x:Class="Справочник_Книг.User_Pages.AddReview"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Справочник_Книг.User_Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddReview">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Оценка (1-5):" Grid.Row="0"/>
+        <TextBox x:Name="ScoreBox" Grid.Row="0" Margin="120,0,0,0" Width="50"/>
+
+        <TextBlock Text="Комментарий:" Grid.Row="1" Margin="0,10,0,0"/>
+        <TextBox x:Name="CommentBox" Grid.Row="2" AcceptsReturn="True" Height="120"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,10,0,0">
+            <Button Content="Сохранить" Width="100" Margin="0,0,10,0" Click="SaveButton_Click"/>
+            <Button Content="Отмена" Width="80" Click="CancelButton_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

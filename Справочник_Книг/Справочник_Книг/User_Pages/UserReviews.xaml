@@ -1,0 +1,28 @@
+﻿<Page x:Class="Справочник_Книг.User_Pages.UserReviews"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Справочник_Книг.User_Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="UserReviews">
+
+    <Grid Margin="10">
+        <StackPanel>
+
+            <DataGrid x:Name="ReviewsGrid"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      Height="460">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Книга" Binding="{Binding Название}" Width="*"/>
+                    <DataGridTextColumn Header="Оценка" Binding="{Binding Оценка}" Width="80"/>
+                    <DataGridTextColumn Header="Комментарий" Binding="{Binding Комментарий}" Width="200"/>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Дата}" Width="120"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+    </Grid>
+</Page>
