@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="113634ee321f433eaea25a766feb8735" Name="Diagram1">
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Группы" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Оценки" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Пользователи" Width="1.5" PointX="1.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Посещаемость" Width="1.5" PointX="11.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Предметы" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Преподаватели" Width="1.5" PointX="1.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Расписание" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="УчебноеЗаведениеModel.Студенты" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Расписани__ID_Гр__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Студенты__ID_Гру__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Оценки__ID_Предм__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Оценки__ID_Препо__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Оценки__ID_Студе__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Преподава__ID_По__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Студенты__ID_Пол__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Посещаемо__ID_Пр__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Посещаемо__ID_Пр__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Посещаемо__ID_Ст__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Предметы__ID_Пре__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="УчебноеЗаведениеModel.FK__Расписани__ID_Пр__48CFD27E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,54 @@
+﻿<Page x:Class="Учебное_Заведение.Teacher_pages.schedule"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учебное_Заведение.Teacher_pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="schedule">
+
+    <Grid Background="Aqua" Margin="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Моё расписание"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           Foreground="#0078D7"
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,20"/>
+
+                <ItemsControl x:Name="DaysPanel">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="#0078D7" BorderThickness="2" CornerRadius="10" Margin="0,0,0,15" Padding="10" Background="White">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding День}" 
+                                               FontSize="22" 
+                                               FontWeight="Bold" 
+                                               Foreground="#0078D7" 
+                                               Margin="0,0,0,10"/>
+
+                                    <ItemsControl ItemsSource="{Binding Пары}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border BorderBrush="#CCE5FF" BorderThickness="1" CornerRadius="8" Margin="0,0,0,8" Padding="8">
+                                                    <StackPanel>
+                                                        <TextBlock Text="{Binding Время}" FontWeight="Bold" FontSize="14" Foreground="#0050A0"/>
+                                                        <TextBlock Text="{Binding Предмет}" FontSize="16" FontWeight="SemiBold"/>
+                                                        <TextBlock Text="{Binding Группа}" FontSize="14" Foreground="Gray"/>
+                                                        <TextBlock Text="{Binding Аудитория}" FontSize="14" Foreground="Gray"/>
+                                                    </StackPanel>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

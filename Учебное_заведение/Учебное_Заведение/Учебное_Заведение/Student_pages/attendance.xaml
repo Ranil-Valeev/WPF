@@ -1,0 +1,82 @@
+﻿<Page x:Class="Учебное_Заведение.Student_pages.attendance"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учебное_Заведение.Student_pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="attendance">
+    <Grid Background="Aqua" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Посещаемость"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   Foreground="#0078D7"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Панель фильтрации -->
+        <Border Grid.Row="1" Padding="10" Margin="0,0,0,10" Background="white" CornerRadius="10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <StackPanel>
+                    <TextBlock Text="Предмет:" FontWeight="Bold" Foreground="#0078D7"/>
+                    <ComboBox x:Name="SubjectFilter" Width="150" SelectionChanged="Filter_Changed"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Период с:" FontWeight="Bold" Foreground="#0078D7"/>
+                    <DatePicker x:Name="StartDate" Width="150" SelectedDateChanged="Filter_Changed"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="по:" FontWeight="Bold" Foreground="#0078D7"/>
+                    <DatePicker x:Name="EndDate" Width="150" SelectedDateChanged="Filter_Changed"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Таблица с прокруткой -->
+        <Border Grid.Row="2" BorderBrush="#0078D7" BorderThickness="2" CornerRadius="10" Padding="10">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <DataGrid x:Name="AttendanceGrid"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          HeadersVisibility="Column"
+                          GridLinesVisibility="All"
+                          AlternatingRowBackground="#E9F3FB"
+                          FontSize="15"
+                          RowHeight="40"
+                          BorderThickness="0"
+                          CanUserAddRows="False"
+                          SelectionMode="Single"
+                          Margin="0,0,0,5">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Дата" Binding="{Binding Дата}" Width="1.2*"/>
+                        <DataGridTextColumn Header="Предмет" Binding="{Binding Предмет}" Width="2*"/>
+                        <DataGridTextColumn Header="Преподаватель" Binding="{Binding Преподаватель}" Width="2.5*"/>
+                        <DataGridTextColumn Header="Статус" Binding="{Binding Статус}" Width="1.2*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Итог -->
+        <TextBlock x:Name="AttendanceSummary"
+                   Grid.Row="3"
+                   Text="Посещаемость: 0%"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Foreground="#0078D7"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0"/>
+    </Grid>
+</Page>

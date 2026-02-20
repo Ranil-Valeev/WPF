@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище УчебноеЗаведениеModelContainer" CdmEntityContainer="УчебноеЗаведениеEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Группы">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Группы">
+        <MappingFragment StoreEntitySet="Группы">
+          <ScalarProperty Name="ID_Группы" ColumnName="ID_Группы" />
+          <ScalarProperty Name="Название_Группы" ColumnName="Название_Группы" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Оценки">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Оценки">
+        <MappingFragment StoreEntitySet="Оценки">
+          <ScalarProperty Name="ID_Оценки" ColumnName="ID_Оценки" />
+          <ScalarProperty Name="ID_Студента" ColumnName="ID_Студента" />
+          <ScalarProperty Name="ID_Предмета" ColumnName="ID_Предмета" />
+          <ScalarProperty Name="Оценка" ColumnName="Оценка" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="ID_Преподавателя" ColumnName="ID_Преподавателя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователи">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Пользователи">
+        <MappingFragment StoreEntitySet="Пользователи">
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Роль" ColumnName="Роль" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Посещаемость">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Посещаемость">
+        <MappingFragment StoreEntitySet="Посещаемость">
+          <ScalarProperty Name="ID_Посещаемости" ColumnName="ID_Посещаемости" />
+          <ScalarProperty Name="ID_Студента" ColumnName="ID_Студента" />
+          <ScalarProperty Name="ID_Предмета" ColumnName="ID_Предмета" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Присутствовал" ColumnName="Присутствовал" />
+          <ScalarProperty Name="ID_Преподавателя" ColumnName="ID_Преподавателя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Предметы">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Предметы">
+        <MappingFragment StoreEntitySet="Предметы">
+          <ScalarProperty Name="ID_Предмета" ColumnName="ID_Предмета" />
+          <ScalarProperty Name="Название_Предмета" ColumnName="Название_Предмета" />
+          <ScalarProperty Name="ID_Преподавателя" ColumnName="ID_Преподавателя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Преподаватели">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Преподаватели">
+        <MappingFragment StoreEntitySet="Преподаватели">
+          <ScalarProperty Name="ID_Преподавателя" ColumnName="ID_Преподавателя" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Расписание">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Расписание">
+        <MappingFragment StoreEntitySet="Расписание">
+          <ScalarProperty Name="ID_Записи" ColumnName="ID_Записи" />
+          <ScalarProperty Name="ID_Группы" ColumnName="ID_Группы" />
+          <ScalarProperty Name="День_Недели" ColumnName="День_Недели" />
+          <ScalarProperty Name="Номер_Пары" ColumnName="Номер_Пары" />
+          <ScalarProperty Name="ID_Предмета" ColumnName="ID_Предмета" />
+          <ScalarProperty Name="Аудитория" ColumnName="Аудитория" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Студенты">
+      <EntityTypeMapping TypeName="УчебноеЗаведениеModel.Студенты">
+        <MappingFragment StoreEntitySet="Студенты">
+          <ScalarProperty Name="ID_Студента" ColumnName="ID_Студента" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="ID_Группы" ColumnName="ID_Группы" />
+          <ScalarProperty Name="ID_Пользователя" ColumnName="ID_Пользователя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище УчебноеЗаведениеModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище УчебноеЗаведениеModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище УчебноеЗаведениеModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище УчебноеЗаведениеModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="УчебноеЗаведениеModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище УчебноеЗаведениеModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="УчебноеЗаведениеModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище УчебноеЗаведениеModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище УчебноеЗаведениеModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
