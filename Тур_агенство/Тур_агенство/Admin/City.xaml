@@ -1,0 +1,40 @@
+﻿<Page x:Class="Тур_агенство.Admin.City"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Тур_агенство.Admin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="City">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,15">
+            <Label Content="Выберите город:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="CityComboBox" Width="300" Margin="10,0,0,0"
+                  DisplayMemberPath="Название" SelectionChanged="CityComboBox_SelectionChanged"/>
+        </StackPanel>
+
+        <Label Grid.Row="1" Content="Название города:"/>
+        <TextBox x:Name="CityNameTextBox" Grid.Row="2" Margin="0,0,0,10"/>
+
+        <Label Grid.Row="3" Content="Страна:"/>
+        <ComboBox x:Name="CountryComboBox" Grid.Row="4" Margin="0,0,0,10"
+              DisplayMemberPath="Название"/>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Сохранить" Width="120" Margin="5" Background="#2C3E50" Foreground="White" Click="SaveButton_Click"/>
+            <Button Content="Новый" Width="120" Margin="5" Background="#2C3E50" Foreground="White" Click="NewButton_Click"/>
+            <Button Content="Удалить" Width="120" Margin="5" Background="#2C3E50" Foreground="White" Click="DeleteButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

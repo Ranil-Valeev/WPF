@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ТурАгентствоModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Бронирования">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="КлиентId" Type="int" />
+    <Property Name="ТурId" Type="int" />
+    <Property Name="ДатаБронирования" Type="date" />
+  </EntityType>
+  <EntityType Name="Города">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="СтранаId" Type="int" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ЭлектроннаяПочта" Type="nvarchar" MaxLength="150" />
+    <Property Name="Телефон" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Рекомендации">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="КлиентId" Type="int" />
+    <Property Name="ТурId" Type="int" />
+    <Property Name="Причина" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Страны">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Туры">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Описание" Type="nvarchar(max)" />
+    <Property Name="Цена" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ДатаНачала" Type="date" />
+    <Property Name="ДатаОкончания" Type="date" />
+    <Property Name="ГородId" Type="int" />
+    <Property Name="Фото" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK__Бронирова__Клиен__412EB0B6">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="0..1" />
+    <End Role="Бронирования" Type="Self.Бронирования" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Бронирования">
+        <PropertyRef Name="КлиентId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Бронирова__ТурId__4222D4EF">
+    <End Role="Туры" Type="Self.Туры" Multiplicity="0..1" />
+    <End Role="Бронирования" Type="Self.Бронирования" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Туры">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Бронирования">
+        <PropertyRef Name="ТурId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Города__СтранаId__398D8EEE">
+    <End Role="Страны" Type="Self.Страны" Multiplicity="0..1" />
+    <End Role="Города" Type="Self.Города" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Страны">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Города">
+        <PropertyRef Name="СтранаId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__Клиен__44FF419A">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="0..1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="КлиентId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__ТурId__45F365D3">
+    <End Role="Туры" Type="Self.Туры" Multiplicity="0..1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Туры">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="ТурId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Туры__ГородId__3C69FB99">
+    <End Role="Города" Type="Self.Города" Multiplicity="0..1" />
+    <End Role="Туры" Type="Self.Туры" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Города">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Туры">
+        <PropertyRef Name="ГородId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище ТурАгентствоModelContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Бронирования" EntityType="Self.Бронирования" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Города" EntityType="Self.Города" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Рекомендации" EntityType="Self.Рекомендации" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Страны" EntityType="Self.Страны" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Туры" EntityType="Self.Туры" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Бронирова__Клиен__412EB0B6" Association="Self.FK__Бронирова__Клиен__412EB0B6">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Бронирования" EntitySet="Бронирования" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Бронирова__ТурId__4222D4EF" Association="Self.FK__Бронирова__ТурId__4222D4EF">
+      <End Role="Туры" EntitySet="Туры" />
+      <End Role="Бронирования" EntitySet="Бронирования" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Города__СтранаId__398D8EEE" Association="Self.FK__Города__СтранаId__398D8EEE">
+      <End Role="Страны" EntitySet="Страны" />
+      <End Role="Города" EntitySet="Города" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__Клиен__44FF419A" Association="Self.FK__Рекоменда__Клиен__44FF419A">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__ТурId__45F365D3" Association="Self.FK__Рекоменда__ТурId__45F365D3">
+      <End Role="Туры" EntitySet="Туры" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Туры__ГородId__3C69FB99" Association="Self.FK__Туры__ГородId__3C69FB99">
+      <End Role="Города" EntitySet="Города" />
+      <End Role="Туры" EntitySet="Туры" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
