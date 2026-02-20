@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\client.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\client.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\magnit\\magnit\\client.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\client.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\magnit\\magnit\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\registr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\registr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\makers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\makers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\makers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\makers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\clients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\clients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\clients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\clients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\category.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\category.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\magnit\\adminpages\\category.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C28BB58-B85B-4C93-8532-168DCFD4351D}|Magnit\\Magnit.csproj|solutionrelative:magnit\\adminpages\\category.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Client.xaml",
+              "RelativeDocumentMoniker": "Magnit\\Client.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Client.xaml",
+              "RelativeToolTip": "Magnit\\Client.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-19T09:08:43.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Registr.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\Registr.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Registr.xaml.cs",
+              "RelativeToolTip": "Magnit\\Registr.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwEQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:12:19.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Client.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\Client.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Client.xaml.cs",
+              "RelativeToolTip": "Magnit\\Client.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:46:13.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Registr.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Registr.xaml",
+              "RelativeDocumentMoniker": "Magnit\\Registr.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\Registr.xaml",
+              "RelativeToolTip": "Magnit\\Registr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T18:41:24.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Magnit\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:40:30.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Magnit\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\MainWindow.xaml",
+              "RelativeToolTip": "Magnit\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-28T11:18:39.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Product.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Product.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Product.xaml.cs",
+              "RelativeToolTip": "Magnit\\AdminPages\\Product.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:15:45.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Product.xaml",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Product.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Product.xaml",
+              "RelativeToolTip": "Magnit\\AdminPages\\Product.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T23:15:45.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Orders.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Orders.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Orders.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Orders.xaml.cs",
+              "RelativeToolTip": "Magnit\\AdminPages\\Orders.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:15:44.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Orders.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Orders.xaml",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Orders.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Orders.xaml",
+              "RelativeToolTip": "Magnit\\AdminPages\\Orders.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T23:15:42.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Makers.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Makers.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Makers.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Makers.xaml.cs",
+              "RelativeToolTip": "Magnit\\AdminPages\\Makers.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:15:42.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Makers.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Makers.xaml",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Makers.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Makers.xaml",
+              "RelativeToolTip": "Magnit\\AdminPages\\Makers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T23:15:41.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Clients.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Clients.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Clients.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Clients.xaml.cs",
+              "RelativeToolTip": "Magnit\\AdminPages\\Clients.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:15:40.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Clients.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Clients.xaml",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Clients.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Clients.xaml",
+              "RelativeToolTip": "Magnit\\AdminPages\\Clients.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T23:15:39.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Category.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Category.xaml.cs",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Category.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Category.xaml.cs",
+              "RelativeToolTip": "Magnit\\AdminPages\\Category.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T23:15:38.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Category.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Category.xaml",
+              "RelativeDocumentMoniker": "Magnit\\AdminPages\\Category.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Magnit\\Magnit\\AdminPages\\Category.xaml",
+              "RelativeToolTip": "Magnit\\AdminPages\\Category.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T23:15:37.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

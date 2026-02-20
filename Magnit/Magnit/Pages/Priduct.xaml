@@ -1,0 +1,27 @@
+﻿<Page x:Class="Magnit.Pages.Priduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Magnit.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Priduct">
+
+    <Grid>
+        <DataGrid x:Name="ProductsGrid"
+                 AutoGenerateColumns="False"
+                 Background="White"
+                 HeadersVisibility="Column"
+                 IsReadOnly="True"
+                 Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID_товара}" Width="Auto"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding название}" Width="*"/>
+                <DataGridTextColumn Header="Описание" Binding="{Binding описание}" Width="2*"/>
+                <DataGridTextColumn Header="Производитель" Binding="{Binding Производитель.Название}" Width="*"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Категория.название}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
