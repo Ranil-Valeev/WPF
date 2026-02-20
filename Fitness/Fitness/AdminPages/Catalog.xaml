@@ -1,0 +1,59 @@
+﻿<Page x:Class="Fitness.AdminPages.Catalog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Fitness.AdminPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="Catalog">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Тренировка:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox x:Name="CatalogTrainning" Width="200" SelectionChanged="Catalog_SelectionChanged" DisplayMemberPath="Название"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Название:" Margin="5"/>
+            <TextBox  x:Name="Name" Margin="5" Width="180"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Тип:" Margin="5" Width="65"/>
+            <TextBox  x:Name="Type" Margin="5" Width="180"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Тренер:" Margin="5" Width="65"/>
+            <TextBox  x:Name="Trener" Margin="5" Width="180"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Время:" Margin="5" Width="65"/>
+            <TextBox  x:Name="Time" Margin="5" Width="180"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Уникальный код:" Margin="5" Width="104"/>
+            <TextBox  x:Name="Fake_ID" Margin="5" Width="141"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label  Content="Фелиал:" Margin="5" Width="65"/>
+            <ComboBox  x:Name="Fel" Margin="5" Width="180"/>
+        </StackPanel>
+        <StackPanel Grid.Row="10" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,263,10,-288" >
+            <Button x:Name="Save" Content="Сохранить" Width="100" Margin="0,0,10,0" Click="Save_Click" Background="Aqua"/>
+            <Button x:Name="New" Content="Новый" Width="100" Margin="0,0,10,0" Click="New_Click" Background="Aqua"/>
+            <Button x:Name="Delete" Content="Удалить" Width="100" Click="Delete_Click" Background="Aqua"/>
+        </StackPanel>
+    </Grid>
+</Page>

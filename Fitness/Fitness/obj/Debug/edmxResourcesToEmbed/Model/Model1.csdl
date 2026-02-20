@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Фитнес_ЗалModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Журнал">
+    <Key>
+      <PropertyRef Name="Id_журнала" />
+    </Key>
+    <Property Name="Id_журнала" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_клиента" Type="Int32" Nullable="false" />
+    <Property Name="Действие" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Дата_и_время" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Клиенты" Relationship="Self.FK__Журнал__Id_клиен__48CFD27E" FromRole="Журнал" ToRole="Клиенты" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Id_клиента" />
+    </Key>
+    <Property Name="Id_клиента" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Логин" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Дата_регистрации" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Последний_вход" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Журнал" Relationship="Self.FK__Журнал__Id_клиен__48CFD27E" FromRole="Клиенты" ToRole="Журнал" />
+    <NavigationProperty Name="Посещения" Relationship="Self.FK__Посещения__Id_кл__412EB0B6" FromRole="Клиенты" ToRole="Посещения" />
+  </EntityType>
+  <EntityType Name="Посещения">
+    <Key>
+      <PropertyRef Name="Id_посещений" />
+    </Key>
+    <Property Name="Id_посещений" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_клиента" Type="Int32" Nullable="false" />
+    <Property Name="Id_тренировки" Type="Int32" Nullable="false" />
+    <Property Name="Дата_записи" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Статус" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Клиенты" Relationship="Self.FK__Посещения__Id_кл__412EB0B6" FromRole="Посещения" ToRole="Клиенты" />
+    <NavigationProperty Name="Тренировки" Relationship="Self.FK__Посещения__Id_тр__4222D4EF" FromRole="Посещения" ToRole="Тренировки" />
+  </EntityType>
+  <EntityType Name="Рекомендации">
+    <Key>
+      <PropertyRef Name="Id_рекомендации" />
+    </Key>
+    <Property Name="Id_рекомендации" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_тренировки" Type="Int32" Nullable="false" />
+    <Property Name="Id_рекомендованной_тренировки" Type="Int32" Nullable="false" />
+    <Property Name="Причина" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Тренировки" Relationship="Self.FK__Рекоменда__Id_ре__45F365D3" FromRole="Рекомендации" ToRole="Тренировки" />
+    <NavigationProperty Name="Тренировки1" Relationship="Self.FK__Рекоменда__Id_тр__44FF419A" FromRole="Рекомендации" ToRole="Тренировки" />
+  </EntityType>
+  <EntityType Name="Тренировки">
+    <Key>
+      <PropertyRef Name="Id_тренеровки" />
+    </Key>
+    <Property Name="Id_тренеровки" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Тип" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Тренер" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Время_проведения" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Уникальный_код" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Id_филиала" Type="Int32" />
+    <NavigationProperty Name="Посещения" Relationship="Self.FK__Посещения__Id_тр__4222D4EF" FromRole="Тренировки" ToRole="Посещения" />
+    <NavigationProperty Name="Рекомендации" Relationship="Self.FK__Рекоменда__Id_ре__45F365D3" FromRole="Тренировки" ToRole="Рекомендации" />
+    <NavigationProperty Name="Рекомендации1" Relationship="Self.FK__Рекоменда__Id_тр__44FF419A" FromRole="Тренировки" ToRole="Рекомендации" />
+    <NavigationProperty Name="Филиалы" Relationship="Self.FK__Тренировк__Id_фи__3E52440B" FromRole="Тренировки" ToRole="Филиалы" />
+  </EntityType>
+  <EntityType Name="Филиалы">
+    <Key>
+      <PropertyRef Name="Id_филиала" />
+    </Key>
+    <Property Name="Id_филиала" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Название" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Адрес" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Контактный_телефон" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Тренировки" Relationship="Self.FK__Тренировк__Id_фи__3E52440B" FromRole="Филиалы" ToRole="Тренировки" />
+  </EntityType>
+  <Association Name="FK__Журнал__Id_клиен__48CFD27E">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="Журнал" Type="Self.Журнал" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id_клиента" />
+      </Principal>
+      <Dependent Role="Журнал">
+        <PropertyRef Name="Id_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Посещения__Id_кл__412EB0B6">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="Посещения" Type="Self.Посещения" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id_клиента" />
+      </Principal>
+      <Dependent Role="Посещения">
+        <PropertyRef Name="Id_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Посещения__Id_тр__4222D4EF">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Посещения" Type="Self.Посещения" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Посещения">
+        <PropertyRef Name="Id_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__Id_ре__45F365D3">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="Id_рекомендованной_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__Id_тр__44FF419A">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="Id_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Тренировк__Id_фи__3E52440B">
+    <End Role="Филиалы" Type="Self.Филиалы" Multiplicity="0..1" />
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Филиалы">
+        <PropertyRef Name="Id_филиала" />
+      </Principal>
+      <Dependent Role="Тренировки">
+        <PropertyRef Name="Id_филиала" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Фитнес_ЗалEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Журнал" EntityType="Self.Журнал" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
+    <EntitySet Name="Посещения" EntityType="Self.Посещения" />
+    <EntitySet Name="Рекомендации" EntityType="Self.Рекомендации" />
+    <EntitySet Name="Тренировки" EntityType="Self.Тренировки" />
+    <EntitySet Name="Филиалы" EntityType="Self.Филиалы" />
+    <AssociationSet Name="FK__Журнал__Id_клиен__48CFD27E" Association="Self.FK__Журнал__Id_клиен__48CFD27E">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Журнал" EntitySet="Журнал" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Посещения__Id_кл__412EB0B6" Association="Self.FK__Посещения__Id_кл__412EB0B6">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Посещения" EntitySet="Посещения" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Посещения__Id_тр__4222D4EF" Association="Self.FK__Посещения__Id_тр__4222D4EF">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Посещения" EntitySet="Посещения" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__Id_ре__45F365D3" Association="Self.FK__Рекоменда__Id_ре__45F365D3">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__Id_тр__44FF419A" Association="Self.FK__Рекоменда__Id_тр__44FF419A">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Тренировк__Id_фи__3E52440B" Association="Self.FK__Тренировк__Id_фи__3E52440B">
+      <End Role="Филиалы" EntitySet="Филиалы" />
+      <End Role="Тренировки" EntitySet="Тренировки" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(Фитнес_ЗалModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(Фитнес_ЗалModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

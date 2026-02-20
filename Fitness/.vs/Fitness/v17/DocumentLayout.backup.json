@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\rec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\rec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\records.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\records.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F 03\\fitness\\fitness\\pages\\cataloginfo.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\cataloginfo.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\cataloginfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\cataloginfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\records.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\records.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\rec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\rec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\branches.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\branches.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\branches.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\branches.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\clientrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\clientrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\pages\\catalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\pages\\catalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\fitness\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{762037CD-E150-4491-BC27-CB0FC6526798}|Fitness\\Fitness.csproj|solutionrelative:fitness\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Records.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Records.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Records.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Records.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\Records.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:05:47.778Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatalogInfo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\CatalogInfo.xaml.cs",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\CatalogInfo.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\CatalogInfo.xaml.cs",
+              "RelativeToolTip": "Fitness\\Pages\\CatalogInfo.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T18:06:45.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Records.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Records.xaml.cs",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Records.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Records.xaml.cs",
+              "RelativeToolTip": "Fitness\\Pages\\Records.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T18:06:03.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rec.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Rec.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Rec.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Rec.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\Rec.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:05:21.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rec.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Rec.xaml.cs",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Rec.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Rec.xaml.cs",
+              "RelativeToolTip": "Fitness\\Pages\\Rec.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:20:08.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Branches.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Branches.xaml.cs",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Branches.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Branches.xaml.cs",
+              "RelativeToolTip": "Fitness\\Pages\\Branches.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T18:05:01.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Branches.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Branches.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Branches.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Branches.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\Branches.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:04:30.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClientRecord.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\ClientRecord.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\ClientRecord.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\ClientRecord.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\ClientRecord.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:04:21.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CatalogInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\CatalogInfo.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\CatalogInfo.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\CatalogInfo.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\CatalogInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:04:18.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Catalog.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Catalog.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Pages\\Catalog.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Pages\\Catalog.xaml",
+              "RelativeToolTip": "Fitness\\Pages\\Catalog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:04:13.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Admin.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Admin.xaml",
+              "RelativeDocumentMoniker": "Fitness\\Admin.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F 03\\Fitness\\Fitness\\Admin.xaml",
+              "RelativeToolTip": "Fitness\\Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-13T18:04:05.209Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

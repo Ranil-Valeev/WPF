@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Фитнес_ЗалModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Журнал">
+    <Key>
+      <PropertyRef Name="Id_журнала" />
+    </Key>
+    <Property Name="Id_журнала" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_клиента" Type="int" Nullable="false" />
+    <Property Name="Действие" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Дата_и_время" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Id_клиента" />
+    </Key>
+    <Property Name="Id_клиента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Логин" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Дата_регистрации" Type="date" Nullable="false" />
+    <Property Name="Последний_вход" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Посещения">
+    <Key>
+      <PropertyRef Name="Id_посещений" />
+    </Key>
+    <Property Name="Id_посещений" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_клиента" Type="int" Nullable="false" />
+    <Property Name="Id_тренировки" Type="int" Nullable="false" />
+    <Property Name="Дата_записи" Type="datetime" Nullable="false" />
+    <Property Name="Статус" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Рекомендации">
+    <Key>
+      <PropertyRef Name="Id_рекомендации" />
+    </Key>
+    <Property Name="Id_рекомендации" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_тренировки" Type="int" Nullable="false" />
+    <Property Name="Id_рекомендованной_тренировки" Type="int" Nullable="false" />
+    <Property Name="Причина" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Тренировки">
+    <Key>
+      <PropertyRef Name="Id_тренеровки" />
+    </Key>
+    <Property Name="Id_тренеровки" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Тип" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Тренер" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Время_проведения" Type="datetime" Nullable="false" />
+    <Property Name="Уникальный_код" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id_филиала" Type="int" />
+  </EntityType>
+  <EntityType Name="Филиалы">
+    <Key>
+      <PropertyRef Name="Id_филиала" />
+    </Key>
+    <Property Name="Id_филиала" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Адрес" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Контактный_телефон" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__Журнал__Id_клиен__48CFD27E">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="Журнал" Type="Self.Журнал" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id_клиента" />
+      </Principal>
+      <Dependent Role="Журнал">
+        <PropertyRef Name="Id_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Посещения__Id_кл__412EB0B6">
+    <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+    <End Role="Посещения" Type="Self.Посещения" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Клиенты">
+        <PropertyRef Name="Id_клиента" />
+      </Principal>
+      <Dependent Role="Посещения">
+        <PropertyRef Name="Id_клиента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Посещения__Id_тр__4222D4EF">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Посещения" Type="Self.Посещения" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Посещения">
+        <PropertyRef Name="Id_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__Id_ре__45F365D3">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="Id_рекомендованной_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Рекоменда__Id_тр__44FF419A">
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="1" />
+    <End Role="Рекомендации" Type="Self.Рекомендации" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тренировки">
+        <PropertyRef Name="Id_тренеровки" />
+      </Principal>
+      <Dependent Role="Рекомендации">
+        <PropertyRef Name="Id_тренировки" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Тренировк__Id_фи__3E52440B">
+    <End Role="Филиалы" Type="Self.Филиалы" Multiplicity="0..1" />
+    <End Role="Тренировки" Type="Self.Тренировки" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Филиалы">
+        <PropertyRef Name="Id_филиала" />
+      </Principal>
+      <Dependent Role="Тренировки">
+        <PropertyRef Name="Id_филиала" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище Фитнес_ЗалModelContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Журнал" EntityType="Self.Журнал" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Посещения" EntityType="Self.Посещения" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Рекомендации" EntityType="Self.Рекомендации" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Тренировки" EntityType="Self.Тренировки" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Филиалы" EntityType="Self.Филиалы" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Журнал__Id_клиен__48CFD27E" Association="Self.FK__Журнал__Id_клиен__48CFD27E">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Журнал" EntitySet="Журнал" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Посещения__Id_кл__412EB0B6" Association="Self.FK__Посещения__Id_кл__412EB0B6">
+      <End Role="Клиенты" EntitySet="Клиенты" />
+      <End Role="Посещения" EntitySet="Посещения" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Посещения__Id_тр__4222D4EF" Association="Self.FK__Посещения__Id_тр__4222D4EF">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Посещения" EntitySet="Посещения" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__Id_ре__45F365D3" Association="Self.FK__Рекоменда__Id_ре__45F365D3">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Рекоменда__Id_тр__44FF419A" Association="Self.FK__Рекоменда__Id_тр__44FF419A">
+      <End Role="Тренировки" EntitySet="Тренировки" />
+      <End Role="Рекомендации" EntitySet="Рекомендации" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Тренировк__Id_фи__3E52440B" Association="Self.FK__Тренировк__Id_фи__3E52440B">
+      <End Role="Филиалы" EntitySet="Филиалы" />
+      <End Role="Тренировки" EntitySet="Тренировки" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
