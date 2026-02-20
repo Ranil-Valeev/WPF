@@ -1,0 +1,36 @@
+﻿<Page x:Class="Steam.Pages.Recom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Steam.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Recom">
+
+    <Grid Background="Aqua" >
+        <StackPanel>
+            <TextBlock Text="Рекомендации для вас" 
+                       FontSize="26" 
+                       Foreground="Black" 
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"/>
+
+            <ListView x:Name="LvRecom"
+                      MouseDoubleClick="LvRecom_MouseDoubleClick"
+                      Background="Aqua"
+                      BorderThickness="0"
+                      Foreground="Black"
+                      FontSize="16">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Название" Width="250" DisplayMemberBinding="{Binding Название}" />
+                        <GridViewColumn Header="Жанры" Width="200" DisplayMemberBinding="{Binding Жанры}" />
+                        <GridViewColumn Header="Разработчик" Width="200" DisplayMemberBinding="{Binding Разработчик.Название}" />
+                        <GridViewColumn Header="Издатель" Width="200" DisplayMemberBinding="{Binding Издатель.Название}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,13 @@
+DESKTOP-BJ86E4M
+
+private static SteamEntities _context;
+public static SteamEntities GetContext()
+{
+    if (_context == null)
+    {
+        _context = new SteamEntities();
+    }
+    return _context;
+}
+
+using System.Data.Entity;

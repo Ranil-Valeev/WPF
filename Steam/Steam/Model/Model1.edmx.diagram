@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5430d8d694d94f54ac95978e51bbb325" Name="Diagram1">
+        <EntityTypeShape EntityType="SteamModel.sysdiagram" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.User" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Игра" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Издатель" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Колекция" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Контент" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Критик" Width="1.5" PointX="7.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Отзывы" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Разработчик" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Статус" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Статус_прохождения" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SteamModel.Тип_Издания" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <AssociationConnector Association="SteamModel.FK_Колекция_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Отзывы_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Игра_Издатель" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Игра_Разработчик" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Игра_Статус" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Игра_Тип_Издания" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Колекция_Игра" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Контент_Игра" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Отзывы_Игра" ManuallyRouted="false" />
+        <AssociationConnector Association="SteamModel.FK_Колекция_Статус_прохождения" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

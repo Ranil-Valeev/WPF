@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище SteamModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID_User" />
+    </Key>
+    <Property Name="ID_User" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Фото" Type="nvarchar(max)" />
+    <Property Name="Ник" Type="nvarchar" MaxLength="50" />
+    <Property Name="Год_рождения" Type="date" />
+    <Property Name="Адрес" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Игра">
+    <Key>
+      <PropertyRef Name="ID_Игры" />
+    </Key>
+    <Property Name="ID_Игры" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Локализация" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Дата_релиза" Type="date" Nullable="false" />
+    <Property Name="Дата_региона" Type="date" Nullable="false" />
+    <Property Name="Платформы" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Жанры" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ID_Разработчика" Type="int" Nullable="false" />
+    <Property Name="ID_Издателя" Type="int" Nullable="false" />
+    <Property Name="Возростной_рейтинг" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Системные_требования" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Описание" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Среднее_время" Type="int" Nullable="false" />
+    <Property Name="ID_Типа_издания" Type="int" Nullable="false" />
+    <Property Name="ID_Статуса" Type="int" Nullable="false" />
+    <Property Name="Фото" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Издатель">
+    <Key>
+      <PropertyRef Name="ID_Издателя" />
+    </Key>
+    <Property Name="ID_Издателя" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Страна" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Год" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Фото" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Колекция">
+    <Key>
+      <PropertyRef Name="ID_Колекции" />
+    </Key>
+    <Property Name="ID_Колекции" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Игры" Type="int" Nullable="false" />
+    <Property Name="ID_User" Type="int" Nullable="false" />
+    <Property Name="ID_Сатуса_прохождения" Type="int" Nullable="false" />
+    <Property Name="Часы_игры" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Оценка" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Пользовательские_тэги" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Контент">
+    <Key>
+      <PropertyRef Name="ID_Контента" />
+    </Key>
+    <Property Name="ID_Контента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Игры" Type="int" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Тип_контента" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Описание" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Дата" Type="date" Nullable="false" />
+    <Property Name="Цена" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Критик">
+    <Key>
+      <PropertyRef Name="ID_Критика" />
+    </Key>
+    <Property Name="ID_Критика" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ник" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Отзывы">
+    <Key>
+      <PropertyRef Name="ID_Отзыва" />
+    </Key>
+    <Property Name="ID_Отзыва" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Игры" Type="int" Nullable="false" />
+    <Property Name="ID_User" Type="int" Nullable="false" />
+    <Property Name="Тип_автора" Type="nvarchar" MaxLength="50" />
+    <Property Name="Текст_рецензии" Type="nvarchar(max)" />
+    <Property Name="Рейтинг" Type="int" />
+    <Property Name="Дата" Type="date" />
+    <Property Name="Лайки" Type="int" />
+    <Property Name="Дизлайки" Type="int" />
+  </EntityType>
+  <EntityType Name="Разработчик">
+    <Key>
+      <PropertyRef Name="ID_Разработчика" />
+    </Key>
+    <Property Name="ID_Разработчика" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Страна" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Год" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="специализация" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Статус">
+    <Key>
+      <PropertyRef Name="ID_Статуса" />
+    </Key>
+    <Property Name="ID_Статуса" Type="int" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Статус_прохождения">
+    <Key>
+      <PropertyRef Name="ID_Статуса_прохождения" />
+    </Key>
+    <Property Name="ID_Статуса_прохождения" Type="int" Nullable="false" />
+    <Property Name="Статус" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Тип_Издания">
+    <Key>
+      <PropertyRef Name="ID_Типа_издания" />
+    </Key>
+    <Property Name="ID_Типа_издания" Type="int" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Игра_Издатель">
+    <End Role="Издатель" Type="Self.Издатель" Multiplicity="1" />
+    <End Role="Игра" Type="Self.Игра" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Издатель">
+        <PropertyRef Name="ID_Издателя" />
+      </Principal>
+      <Dependent Role="Игра">
+        <PropertyRef Name="ID_Издателя" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Игра_Разработчик">
+    <End Role="Разработчик" Type="Self.Разработчик" Multiplicity="1" />
+    <End Role="Игра" Type="Self.Игра" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Разработчик">
+        <PropertyRef Name="ID_Разработчика" />
+      </Principal>
+      <Dependent Role="Игра">
+        <PropertyRef Name="ID_Разработчика" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Игра_Статус">
+    <End Role="Статус" Type="Self.Статус" Multiplicity="1" />
+    <End Role="Игра" Type="Self.Игра" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Статус">
+        <PropertyRef Name="ID_Статуса" />
+      </Principal>
+      <Dependent Role="Игра">
+        <PropertyRef Name="ID_Статуса" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Игра_Тип_Издания">
+    <End Role="Тип_Издания" Type="Self.Тип_Издания" Multiplicity="1" />
+    <End Role="Игра" Type="Self.Игра" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Тип_Издания">
+        <PropertyRef Name="ID_Типа_издания" />
+      </Principal>
+      <Dependent Role="Игра">
+        <PropertyRef Name="ID_Типа_издания" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Колекция_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Колекция" Type="Self.Колекция" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Колекция">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Колекция_Игра">
+    <End Role="Игра" Type="Self.Игра" Multiplicity="1" />
+    <End Role="Колекция" Type="Self.Колекция" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Игра">
+        <PropertyRef Name="ID_Игры" />
+      </Principal>
+      <Dependent Role="Колекция">
+        <PropertyRef Name="ID_Игры" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Колекция_Статус_прохождения">
+    <End Role="Статус_прохождения" Type="Self.Статус_прохождения" Multiplicity="1" />
+    <End Role="Колекция" Type="Self.Колекция" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Статус_прохождения">
+        <PropertyRef Name="ID_Статуса_прохождения" />
+      </Principal>
+      <Dependent Role="Колекция">
+        <PropertyRef Name="ID_Сатуса_прохождения" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Контент_Игра">
+    <End Role="Игра" Type="Self.Игра" Multiplicity="1" />
+    <End Role="Контент" Type="Self.Контент" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Игра">
+        <PropertyRef Name="ID_Игры" />
+      </Principal>
+      <Dependent Role="Контент">
+        <PropertyRef Name="ID_Игры" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Отзывы_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Отзывы" Type="Self.Отзывы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID_User" />
+      </Principal>
+      <Dependent Role="Отзывы">
+        <PropertyRef Name="ID_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Отзывы_Игра">
+    <End Role="Игра" Type="Self.Игра" Multiplicity="1" />
+    <End Role="Отзывы" Type="Self.Отзывы" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Игра">
+        <PropertyRef Name="ID_Игры" />
+      </Principal>
+      <Dependent Role="Отзывы">
+        <PropertyRef Name="ID_Игры" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище SteamModelContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Игра" EntityType="Self.Игра" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Издатель" EntityType="Self.Издатель" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Колекция" EntityType="Self.Колекция" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Контент" EntityType="Self.Контент" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Критик" EntityType="Self.Критик" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Отзывы" EntityType="Self.Отзывы" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Разработчик" EntityType="Self.Разработчик" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Статус" EntityType="Self.Статус" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Статус_прохождения" EntityType="Self.Статус_прохождения" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Тип_Издания" EntityType="Self.Тип_Издания" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Игра_Издатель" Association="Self.FK_Игра_Издатель">
+      <End Role="Издатель" EntitySet="Издатель" />
+      <End Role="Игра" EntitySet="Игра" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Игра_Разработчик" Association="Self.FK_Игра_Разработчик">
+      <End Role="Разработчик" EntitySet="Разработчик" />
+      <End Role="Игра" EntitySet="Игра" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Игра_Статус" Association="Self.FK_Игра_Статус">
+      <End Role="Статус" EntitySet="Статус" />
+      <End Role="Игра" EntitySet="Игра" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Игра_Тип_Издания" Association="Self.FK_Игра_Тип_Издания">
+      <End Role="Тип_Издания" EntitySet="Тип_Издания" />
+      <End Role="Игра" EntitySet="Игра" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Колекция_User" Association="Self.FK_Колекция_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Колекция" EntitySet="Колекция" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Колекция_Игра" Association="Self.FK_Колекция_Игра">
+      <End Role="Игра" EntitySet="Игра" />
+      <End Role="Колекция" EntitySet="Колекция" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Колекция_Статус_прохождения" Association="Self.FK_Колекция_Статус_прохождения">
+      <End Role="Статус_прохождения" EntitySet="Статус_прохождения" />
+      <End Role="Колекция" EntitySet="Колекция" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Контент_Игра" Association="Self.FK_Контент_Игра">
+      <End Role="Игра" EntitySet="Игра" />
+      <End Role="Контент" EntitySet="Контент" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Отзывы_User" Association="Self.FK_Отзывы_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Отзывы" EntitySet="Отзывы" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Отзывы_Игра" Association="Self.FK_Отзывы_Игра">
+      <End Role="Игра" EntitySet="Игра" />
+      <End Role="Отзывы" EntitySet="Отзывы" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

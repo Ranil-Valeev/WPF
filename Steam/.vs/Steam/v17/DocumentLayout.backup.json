@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\adminpages\\add_game.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\adminpages\\add_game.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\steam\\adminpages\\add_game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\adminpages\\add_game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\steam\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add_game.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\AdminPages\\Add_game.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\AdminPages\\Add_game.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\AdminPages\\Add_game.xaml.cs",
+              "RelativeToolTip": "Steam\\AdminPages\\Add_game.xaml.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAAAAQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T10:35:12.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Add_game.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\AdminPages\\Add_game.xaml",
+              "RelativeDocumentMoniker": "Steam\\AdminPages\\Add_game.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\AdminPages\\Add_game.xaml",
+              "RelativeToolTip": "Steam\\AdminPages\\Add_game.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T10:34:42.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Admin.xaml",
+              "RelativeDocumentMoniker": "Steam\\Admin.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Admin.xaml",
+              "RelativeToolTip": "Steam\\Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-10T10:19:58.272Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

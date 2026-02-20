@@ -1,0 +1,106 @@
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\Steam.exe.config
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\Steam.exe
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\Steam.pdb
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.csproj.AssemblyReference.cache
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\MainWindow.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\App.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam_MarkupCompile.cache
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam_MarkupCompile.lref
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\MainWindow.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.g.resources
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.Properties.Resources.resources
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.csproj.GenerateResource.cache
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.exe
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.pdb
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam_Content.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Steam.csproj.Up2Date
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Admin.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Client.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Admin.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Client.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Registr.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Registr.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Collection.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Company.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Game.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Profile.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\TOP.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Collection.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Company.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Game.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Profile.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\TOP.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_company.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_develop.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_DLS.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_game.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_company.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_develop.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_DLS.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\AdminPages\Add_game.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Gamecom.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Gamecom.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Gamedetal.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Gamedetal.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\AddCollection.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Review.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\AddCollection.baml
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Review.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\Steam.exe.config
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\Steam.exe
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\Steam.pdb
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.csproj.AssemblyReference.cache
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Admin.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_company.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_develop.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_DLS.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_game.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Client.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\MainWindow.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\AddCollection.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Collection.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Company.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Game.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Gamecom.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Gamedetal.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Profile.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Review.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\TOP.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Registr.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\App.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam_Content.g.cs
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam_MarkupCompile.cache
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam_MarkupCompile.lref
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Admin.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_company.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_develop.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_DLS.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\AdminPages\Add_game.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Client.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\MainWindow.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\AddCollection.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Collection.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Company.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Game.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Gamecom.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Gamedetal.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Profile.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\Review.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Pages\TOP.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Registr.baml
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.g.resources
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.Properties.Resources.resources
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.csproj.GenerateResource.cache
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.csproj.Up2Date
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.exe
+C:\Users\User\Documents\STUDY\УП 05\Steam\Steam\obj\Debug\Steam.pdb
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Recom.g.cs
+C:\Users\User\Documents\STUDY\УП\Steam\Steam\obj\Debug\Pages\Recom.baml

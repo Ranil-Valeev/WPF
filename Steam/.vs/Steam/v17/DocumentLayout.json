@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\gamedetal.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\gamedetal.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\gamedetal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\gamedetal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\company.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\company.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\company.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\company.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\recom.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\recom.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\recom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\recom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\game.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\game.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\pages\\game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\pages\\game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\client.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\client.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\client.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\client.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|c:\\users\\user\\documents\\study\\\u0443\u043F\\steam\\steam\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FD67168E-7BA5-44E0-8628-B429ABD35B9B}|Steam\\Steam.csproj|solutionrelative:steam\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gamedetal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Gamedetal.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Gamedetal.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Gamedetal.xaml.cs",
+              "RelativeToolTip": "Steam\\Pages\\Gamedetal.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:44:00.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gamedetal.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Gamedetal.xaml",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Gamedetal.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Gamedetal.xaml",
+              "RelativeToolTip": "Steam\\Pages\\Gamedetal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:43:36.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Company.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Company.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Company.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Company.xaml.cs",
+              "RelativeToolTip": "Steam\\Pages\\Company.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA0wDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:43:12.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Company.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Company.xaml",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Company.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Company.xaml",
+              "RelativeToolTip": "Steam\\Pages\\Company.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:42:41.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Recom.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Recom.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Recom.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Recom.xaml.cs",
+              "RelativeToolTip": "Steam\\Pages\\Recom.xaml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:42:23.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Recom.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Recom.xaml",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Recom.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Recom.xaml",
+              "RelativeToolTip": "Steam\\Pages\\Recom.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:42:09.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Game.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Game.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Game.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Game.xaml.cs",
+              "RelativeToolTip": "Steam\\Pages\\Game.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:41:51.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Game.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Game.xaml",
+              "RelativeDocumentMoniker": "Steam\\Pages\\Game.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Pages\\Game.xaml",
+              "RelativeToolTip": "Steam\\Pages\\Game.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:41:16.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Client.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Client.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\Client.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Client.xaml.cs",
+              "RelativeToolTip": "Steam\\Client.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAmwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:40:58.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Client.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Client.xaml",
+              "RelativeDocumentMoniker": "Steam\\Client.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\Client.xaml",
+              "RelativeToolTip": "Steam\\Client.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:40:41.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Steam\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Steam\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T18:40:23.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Steam\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0423\u041F\\Steam\\Steam\\MainWindow.xaml",
+              "RelativeToolTip": "Steam\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T18:39:58.942Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

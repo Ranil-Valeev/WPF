@@ -1,0 +1,38 @@
+﻿<Page x:Class="Steam.Pages.AddCollection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Steam.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="AddCollection">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Добавить игру в коллекцию" FontSize="20" Margin="0 0 0 10"/>
+
+        <StackPanel Grid.Row="1" >
+            <TextBlock Text="Выберите игру:"/>
+            <ComboBox x:Name="GameComboBox" DisplayMemberPath="Название" SelectedValuePath="ID_Игры" />
+
+            <TextBlock Text="Пользовательские теги:"/>
+            <TextBox x:Name="TagsTextBox"/>
+
+            <TextBlock Text="Оценка (необязательно):"/>
+            <TextBox x:Name="RatingTextBox" Width="60"/>
+
+            <TextBlock Text="Часы игры (необязательно):"/>
+            <TextBox x:Name="HoursPlayedTextBox" Width="60"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Добавить" Width="120" Height="30"
+                HorizontalAlignment="Right" Margin="0 10 0 0"
+                Click="AddButton_Click"/>
+    </Grid>
+</Page>
