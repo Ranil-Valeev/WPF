@@ -1,0 +1,72 @@
+﻿<Page x:Class="WpfApp2.Pages.EditService"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditService">
+
+    <Grid Background="#FFE7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Услуга: " ></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <ComboBox Margin="5" Grid.Row="0" x:Name="Service" SelectedItem="{Binding Услуги}" SelectedValuePath="ID_Услуги" SelectionChanged="Service_SelectionChanged" Width="284">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Margin="2" FontSize="16" Text="{Binding Наименование_услуги}" TextWrapping="Wrap" Width="Auto" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="Изображение: "/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" >
+            <Button Content="Загрузить изображение" Click="Image_Click" x:Name="Image"  Width="150" Margin="5"/>
+        </StackPanel>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Наименование услуги:" Margin="0,0,10,5"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="ServiceName" Margin="0,0,0,5"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Продолжительность:" Margin="0,0,10,5"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="0,0,0,5" x:Name="Duration"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Стоимость:" Margin="0,0,10,5"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Margin="0,0,0,5" x:Name="Price"/>
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Скидка (%):" Margin="0,0,10,5"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="Discount" Margin="0,0,0,5"/>
+        <Image x:Name="ServiceImage" Width="200" Height="200" Grid.Column="1" Grid.Row="8" />
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Категория:" Margin="0,0,10,5"/>
+        <ComboBox x:Name="servis" SelectedItem="{Binding Категории}" SelectedValuePath="ID_Услуги"  Width="284" Height="23" Margin="5,7,366,6" Grid.Column="1" Grid.Row="7">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="2" FontWeight="Bold" FontSize="14" Text="Услуга:" Width="Auto" HorizontalAlignment="Left" />
+                        <TextBlock Margin="2" FontWeight="Bold" FontSize="14" Text="{Binding Категория}" Width="Auto" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <StackPanel Grid.Row="9" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Width="100" Margin="0,0,10,0" x:Name="Save" Click="Save_Click" Background="Aqua" />
+        </StackPanel>
+    </Grid>
+</Page>

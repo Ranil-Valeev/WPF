@@ -1,0 +1,363 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|c:\\users\\user\\documents\\study\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0438\u0441\\wpfapp2\\wpfapp2\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\records.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\records.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\records.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\records.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\editservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\editservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\models\\\u0443\u0441\u043B\u0443\u0433\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\models\\\u0443\u0441\u043B\u0443\u0433\u0438.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\add_sotrudnik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\add_sotrudnik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\add_servise.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\add_servise.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\pofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\pofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\windows\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\windows\\admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\pofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\pofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\editservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\editservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\clientservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\clientservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\clientservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\clientservice.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\add_sotrudnik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\add_sotrudnik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\windows\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\windows\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\editclient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\editclient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\windows\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\windows\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\editclient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\editclient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\wpfapp2\\pages\\editsotrudnik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C0F68365-DDD8-427E-8521-50AF62E0A5D9}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\pages\\editsotrudnik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Records.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Records.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Records.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Records.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\Records.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:05:29.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Records.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Records.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Records.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Records.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\Records.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T10:05:20.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Models\\Model1.Context.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\Model1.Context.cs",
+              "RelativeToolTip": "WpfApp2\\Models\\Model1.Context.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:11:04.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Add_Servise.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Servise.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Add_Servise.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Servise.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\Add_Servise.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAEwCAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:11:01.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pofile.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Pofile.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Pofile.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Pofile.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\Pofile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T11:19:42.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "\u0423\u0441\u043B\u0443\u0433\u0438.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\\u0423\u0441\u043B\u0443\u0433\u0438.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Models\\\u0423\u0441\u043B\u0443\u0433\u0438.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\\u0423\u0441\u043B\u0443\u0433\u0438.cs",
+              "RelativeToolTip": "WpfApp2\\Models\\\u0423\u0441\u043B\u0443\u0433\u0438.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIA8wCIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:32:38.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditService.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditService.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\EditService.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditService.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\EditService.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:26:38.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditService.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditService.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\EditService.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditService.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\EditService.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T10:26:03.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClientService.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\ClientService.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\ClientService.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\ClientService.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\ClientService.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T08:57:55.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientService.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\ClientService.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\ClientService.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\ClientService.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\ClientService.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T08:48:22.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Add_Sotrudnik.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Sotrudnik.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Add_Sotrudnik.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Sotrudnik.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\Add_Sotrudnik.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T05:33:07.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Admin.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Admin.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Windows\\Admin.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Admin.xaml",
+              "RelativeToolTip": "WpfApp2\\Windows\\Admin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-25T08:38:19.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "WpfApp2\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "WpfApp2\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-05-06T16:16:50.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pofile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Pofile.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Pofile.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Pofile.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\Pofile.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T05:27:02.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T18:55:31.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Add_Sotrudnik.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Sotrudnik.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\Add_Sotrudnik.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\Add_Sotrudnik.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\Add_Sotrudnik.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-29T18:27:23.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Windows\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Login.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Windows\\Login.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:10:13.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Login.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Windows\\Login.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Login.xaml",
+              "RelativeToolTip": "WpfApp2\\Windows\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-29T14:10:07.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EditSotrudnik.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditSotrudnik.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\EditSotrudnik.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditSotrudnik.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\EditSotrudnik.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-25T08:57:59.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Admin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Admin.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Windows\\Admin.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Windows\\Admin.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Windows\\Admin.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:49:10.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditClient.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditClient.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\EditClient.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditClient.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\Pages\\EditClient.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:48:48.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditClient.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditClient.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\Pages\\EditClient.xaml",
+              "ToolTip": "C:\\Users\\User\\Documents\\STUDY\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 \u043A\u043E\u0434\u0430 \u0418\u0421\\WpfApp2\\WpfApp2\\Pages\\EditClient.xaml",
+              "RelativeToolTip": "WpfApp2\\Pages\\EditClient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-25T08:48:12.044Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

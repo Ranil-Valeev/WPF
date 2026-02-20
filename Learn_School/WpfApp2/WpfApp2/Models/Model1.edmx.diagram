@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f60e9048425545558dac4f02a986ba21" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="РКИСModel.sysdiagram" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Изображения" Width="1.5" PointX="1.5" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.История_покупок" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Категории" Width="1.5" PointX="1.5" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Категория" Width="1.5" PointX="1.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Категория_товара" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Клиент" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Комплект" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Наличие_товара" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Проведенные_услуги" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Продажи" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Продажи_услуг" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Рабочее_время" Width="1.5" PointX="4" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Сезон" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Сезонные_товары" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Сканы" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Склад" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Сотрудник" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Товар" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Тэг_клиента" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="РКИСModel.Услуги" Width="1.5" PointX="0.75" PointY="26.125" IsExpanded="true" />
+        <AssociationConnector Association="РКИСModel.FK_Услуги_Изображения" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_История_покупок_Проведенные_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_История_покупок_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Сотрудник_Категории" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Услуги_Категории" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Сотрудник_Категория_сотрудника" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Товар_Категория_товара" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Проведенные_услуги_Клиент" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Комплект_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Комплект_Товар1" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Наличие_товара_Склад" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Наличие_товара_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Проведенные_услуги_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Проведенные_услуги_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Продажи_услуг_Проведенные_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Продажи_услуг_Продажи" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Рабочее_время_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Рабочее_время_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Сезонные_товары_Сезон" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Сезонные_товары_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="РКИСModel.FK_Сканы_Услуги" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

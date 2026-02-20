@@ -1,0 +1,31 @@
+﻿<Page x:Class="WpfApp2.Pages.Record_sotrudnik"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Record_sotrudnik">
+
+    <Grid Background="#FFE7">
+        <DataGrid x:Name="RecordsGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Услуга" Binding="{Binding Услуги.Наименование_услуги}" Width="*"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Начало_оказания_услуги}" Width="*"/>
+                <DataGridTextColumn Header="Имя клиента" Binding="{Binding Клиент.Имя}" Width="*"/>
+                <DataGridTextColumn Header="Фамилия клиента" Binding="{Binding Клиент.Фамилия}" Width="*"/>
+                <DataGridTemplateColumn Header="Статус" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" 
+                                    Click="Button_Click"
+                                    Tag="{Binding ID_Проведенных_услуг}" 
+                                    Margin="2"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

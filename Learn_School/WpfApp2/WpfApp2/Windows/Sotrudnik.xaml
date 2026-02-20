@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.Windows.Sotrudnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Windows"
+        mc:Ignorable="d"
+        Title="Sotrudnik" Height="650" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Label x:Name="lblWelcome" HorizontalAlignment="Center" FontSize="16"/>
+            <Image Source="C:\Users\User\Documents\STUDY\Разработка кода ИС\WpfApp1\WpfApp1\Resources\school_logo.png" HorizontalAlignment="Left" Margin="5" />
+            <Label Content="Learn School" HorizontalAlignment="Left" FontSize="26"  VerticalAlignment="Center" Margin="75,0,0,0" Height="46" Width="164"  />
+            <Button x:Name="Close" Click="Close_Click" Background="Aqua" VerticalAlignment="Center" Margin="670,0,30,0" Height="30" Content="Назад"/>
+            <Button Content="Профиль" x:Name="profile" VerticalAlignment="Center" Height="30" Background="Aqua" Click="profile_Click" Margin="560,0,140,0" />
+            <Button Content="Мои записи" x:Name="MyRecords" VerticalAlignment="Center" Height="30" Background="Aqua" Click="MyRecords_Click" Margin="450,0,250,0" />
+          
+        </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
