@@ -1,0 +1,76 @@
+﻿<Page x:Class="WpfApp2.Pages.ProfileOn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="ProfileOn">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="240"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel  Grid.Row="0" Width="250" Height="80" HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,0,10">
+            <TextBlock Text="Мои питомцы" FontSize="30" Width="250"  />
+        </StackPanel>
+        <Border Grid.Row="1" Margin="19,10,10,10" CornerRadius="20" BorderBrush="Transparent"  Background="#FFC864">
+            <StackPanel Orientation="Horizontal">
+                <ListView x:Name="PetsListView" Grid.Row="1" Background="#FFC864" SelectionMode="Single" Width="150" MouseDoubleClick="PetsListView_MouseDoubleClick">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding GetPhoto}" Width="100" Height="100" MouseDown="Image_MouseDown"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Border Grid.Row="1"  CornerRadius="20" BorderBrush="Transparent" Background="#FFC864" Width="200" Height="200" >
+                    <Button Width="200" Height="200" x:Name="AddPet" Click="AddPet_Click" BorderBrush="Transparent" Background="#FFC864" >
+                        <StackPanel Orientation="Vertical ">
+                            <Image Source="C:\Users\User\Documents\STUDY\УП\WpfApp2\Иконки\Plus Math.png" Width="100" />
+                            <TextBlock Text="Добавить питомца" Foreground="White" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </Border>
+                
+            </StackPanel>
+        </Border>
+        <!--<Border Grid.Row="1"  CornerRadius="20" BorderBrush="Transparent" Background="#FFC864" Width="200" >
+
+        </Border>-->
+
+        <Border Grid.Row="2" Margin="10,47,10,10" CornerRadius="20"  BorderBrush="Transparent" Background="#FFC864">
+            <StackPanel Width="530" Height="180" HorizontalAlignment="Left" Orientation="Vertical" Margin="0,10,0,10">
+                <TextBlock Margin="30,0,0,0" Text="Владелец" Height="25" Width="100"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15"/>
+                <StackPanel Orientation="Horizontal" Margin="10,20,0,5" >
+                    <TextBlock Text="Фамилия Имя Отчество" />
+                    <TextBlock Margin="100,0,0,0" HorizontalAlignment="Right" Width="90" Text="{Binding Фамилия}"/>
+                    <TextBlock HorizontalAlignment="Right" Width="90" Text="{Binding Имя}"/>
+                    <TextBlock HorizontalAlignment="Right" Width="90" Text="{Binding Отчество}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,5" >
+                    <TextBlock Text="Номер телефона" />
+                    <TextBlock HorizontalAlignment="Right" Margin="300,0,0,0" Width="90" Text="{Binding Номер_телефона}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,5" >
+                    <TextBlock Text="Электронная почта" />
+                    <TextBlock HorizontalAlignment="Right" Margin="300,0,0,0" Width="90" Text="{Binding Электронная_почта}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,5" >
+                    <TextBlock Text="Адрес" />
+                    <TextBlock HorizontalAlignment="Right" Margin="150,0,0,0" Width="90" Text="{Binding Город}"/>
+                    <TextBlock HorizontalAlignment="Right"  Width="150" Text="{Binding Улица}"/>
+                    <TextBlock HorizontalAlignment="Right"  Width="30" Text="{Binding Дом}"/>
+                    <TextBlock  Width="30" Text="{Binding Квартира}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,5" >
+                    <TextBlock Text="Дата рождения" />
+                    <TextBlock HorizontalAlignment="Right" Margin="300,0,0,0" Width="60" Text="{Binding Дата_рождения}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

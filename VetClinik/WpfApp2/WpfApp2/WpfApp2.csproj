@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C202FD6-6D94-430D-86A9-51A90905A5FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp2</RootNamespace>
+    <AssemblyName>WpfApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\История_посещений.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Категория_питомца.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Категория_услуг.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Клиенты.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Питомцы.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Рабочее_время.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Роли.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Сотрудник.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Статус.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Статус_записи.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Услуги.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddRecord.xaml.cs">
+      <DependentUpon>AddRecord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Add_Profile.xaml.cs">
+      <DependentUpon>Add_Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Kontact.xaml.cs">
+      <DependentUpon>Kontact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PetDetail.xaml.cs">
+      <DependentUpon>PetDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Pets.xaml.cs">
+      <DependentUpon>Pets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Profile.xaml.cs">
+      <DependentUpon>Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProfileOn.xaml.cs">
+      <DependentUpon>ProfileOn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProfileSotrudnik.xaml.cs">
+      <DependentUpon>ProfileSotrudnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RecordClient.xaml.cs">
+      <DependentUpon>RecordClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RecordSotrudnik.xaml.cs">
+      <DependentUpon>RecordSotrudnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServiseClient.xaml.cs">
+      <DependentUpon>ServiseClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServiseClientON.xaml.cs">
+      <DependentUpon>ServiseClientON.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServiseSotrudnik.xaml.cs">
+      <DependentUpon>ServiseSotrudnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Client.xaml.cs">
+      <DependentUpon>Client.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Sotrudnik.xaml.cs">
+      <DependentUpon>Sotrudnik.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\AddRecord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Add_Profile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Kontact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PetDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Pets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Profile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ProfileOn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ProfileSotrudnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RecordClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RecordSotrudnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ServiseClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ServiseClientON.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ServiseSotrudnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Client.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Sotrudnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Албеско Анатолий Викторович.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Алиса.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Артемьева Полина Владимировна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ахметова Мария Львовна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Богданова Александра Сергеевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Болгарина Ольга Ивановна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Булочка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Вильгусевич Виктория Анатольевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Дорошина Татьяна Васильевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Дубравная.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Жорик.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Зорина Ирина Владимировна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Кеша.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Козлова Екатерина Сергеевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Комарова Ольга Марьяновна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Кузминский Марк Сергеевич.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Кузяшова Александра Игоревна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Курапова Кристина Максимовна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Лексус.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Луна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Маркис.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мартен.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Маруся.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Милана.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Мовчан Руслана Игоревна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Низовцев Дмитрий Алексеевич.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Нура.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Онежская.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Орехова Мария Анатольевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Полежаева Елизавета Евгеньевна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рокки.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рухлевич Максим Игоревич.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тарнавская Дарья Владимировна.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat Footprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor Appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find Clinic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical Doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus Math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Treatment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Вакцинация.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Дерматология.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Кастрация.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Лаборатория.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Офтальмология.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рентген.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стационар.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Стоматология.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Терапия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\УЗИ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Хирургия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ЭКГ И ЭхоКГ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

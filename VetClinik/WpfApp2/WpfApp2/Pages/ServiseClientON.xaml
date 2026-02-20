@@ -1,0 +1,48 @@
+﻿<Page x:Class="WpfApp2.Pages.ServiseClientON"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ServiseClientON">
+    <Border CornerRadius="20" BorderBrush="Transparent" Background="{StaticResource GradientBackground}">
+
+   
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Название категории -->
+            <TextBlock x:Name="CategoryTitle" Grid.Row="0" 
+                   FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <!-- Описание категории -->
+            <TextBlock x:Name="CategoryDescription" Grid.Row="1" 
+                   TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+            <!-- DataGrid с услугами -->
+            <DataGrid x:Name="ServicesGrid" Grid.Row="2" 
+                 AutoGenerateColumns="False" IsReadOnly="True"
+                 HeadersVisibility="Column" GridLinesVisibility="None"
+                 SelectionMode="Single" SelectionUnit="FullRow">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Услуга" Binding="{Binding Название}" Width="*"/>
+                    <DataGridTextColumn Header="Стоимость" Binding="{Binding Стоимость}" Width="Auto"/>
+                    <DataGridTextColumn Header="Длительность" Binding="{Binding Длительность}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+           
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button Content="Назад" Width="100" Margin="0,0,10,0" Click="BackButton_Click" Background="#FFA73A"/>
+                <Button Content="Записаться" Width="100" Click="BookButton_Click" Background="#FFA73A"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>

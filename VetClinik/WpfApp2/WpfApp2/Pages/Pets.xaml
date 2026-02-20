@@ -1,0 +1,73 @@
+﻿<Page x:Class="WpfApp2.Pages.Pets"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="540"
+      Title="Pets">
+    <Border CornerRadius="20" BorderBrush="Transparent" Background="{StaticResource GradientBackground}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+                <Border Width="150" Height="150" BorderBrush="LightGray" BorderThickness="2" CornerRadius="10"
+        Background="#FFF9F9F9" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid>
+                        <Image x:Name="PetPhotoImage" Stretch="UniformToFill"/>
+                        <Button Content="+" x:Name="AddPhotoButton" FontSize="36" Background="Transparent" BorderBrush="Transparent" 
+                Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Click="AddPhotoButton_Click"/>
+                    </Grid>
+                </Border>
+
+                <!-- Правая часть: Форма -->
+            <StackPanel Grid.Column="1" Margin="15" VerticalAlignment="Top">
+                <TextBlock Text="Мой питомец" FontSize="24" Foreground="Green" FontWeight="Bold" Margin="0,0,0,10"/>
+                <Button x:Name="AddPetButton" Content="Добавить" Width="100" Height="30" Background="Green" Foreground="White" Margin="0,0,0,15"
+                        Click="AddPetButton_Click"/>
+
+                <TextBlock Text="Введите кличку питомца"/>
+                <TextBox x:Name="NameTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Выберите вид питомца"/>
+                    <ComboBox x:Name="SpeciesComboBox" DisplayMemberPath="Название" SelectedValuePath="ID_вида" Margin="0,2,0,8"/>
+
+                    <TextBlock Text="Введите породу"/>
+                <TextBox x:Name="BreedTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите пол питомца"/>
+                <ComboBox x:Name="GenderComboBox" Margin="0,2,0,8">
+                    <ComboBoxItem Content="Мальчик"/>
+                    <ComboBoxItem Content="Девочка"/>
+                </ComboBox>
+
+                <TextBlock Text="Введите дату рождения"/>
+                <DatePicker x:Name="BirthDatePicker" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите вес питомца (кг)"/>
+                <TextBox x:Name="WeightTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите рост питомца (см)"/>
+                <TextBox x:Name="HeightTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите группу крови"/>
+                <TextBox x:Name="BloodGroupTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите возраст"/>
+                <TextBox x:Name="AgeTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите аллергии"/>
+                <TextBox x:Name="AllergiesTextBox" Margin="0,2,0,8"/>
+
+                <TextBlock Text="Введите хронические заболевания"/>
+                <TextBox x:Name="ChronicDiseasesTextBox" Margin="0,2,0,8"/>
+            </StackPanel>
+        </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>

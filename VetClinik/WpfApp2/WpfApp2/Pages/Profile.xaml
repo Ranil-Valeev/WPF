@@ -1,0 +1,18 @@
+﻿<Page x:Class="WpfApp2.Pages.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Profile">
+    <Grid>
+        <Border CornerRadius="20" Background="#F4C081" Padding="20">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Добавьте профиль!)" FontSize="24"  Foreground="#6D4900"  HorizontalAlignment="Center"  Margin="0,0,0,20"/>
+                <Button Content="Добавить" Width="100" Height="40" Background="#27D33D"  Foreground="White" FontWeight="Bold"  Click="AddButton_Click" BorderThickness="0" Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

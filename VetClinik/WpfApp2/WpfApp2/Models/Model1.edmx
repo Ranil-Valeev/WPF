@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище VetClinikumModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID_user" />
+          </Key>
+          <Property Name="ID_user" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Номер_телефона" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Пароль" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_роли" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="История_посещений">
+          <Key>
+            <PropertyRef Name="ID_истории" />
+          </Key>
+          <Property Name="ID_истории" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_времени" Type="int" Nullable="false" />
+          <Property Name="ID_питомца" Type="int" Nullable="false" />
+          <Property Name="Время_записи" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Стоимость" Type="nvarchar" MaxLength="50" />
+          <Property Name="Статус_записи" Type="int" />
+          <Property Name="Коментарий" Type="nvarchar" MaxLength="50" />
+          <Property Name="Скан" Type="nvarchar" MaxLength="50" />
+          <Property Name="Скан_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Скан_3" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Категория_питомца">
+          <Key>
+            <PropertyRef Name="ID_вида" />
+          </Key>
+          <Property Name="ID_вида" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Категория_услуг">
+          <Key>
+            <PropertyRef Name="ID_Категории" />
+          </Key>
+          <Property Name="ID_Категории" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Описание_услуг" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Фото" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Цена" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Клиенты">
+          <Key>
+            <PropertyRef Name="ID_клиента" />
+          </Key>
+          <Property Name="ID_клиента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Отчество" Type="nvarchar" MaxLength="50" />
+          <Property Name="Номер_телефона" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Электронная_почта" Type="nvarchar" MaxLength="50" />
+          <Property Name="Дата_рождения" Type="date" />
+          <Property Name="Город" Type="nvarchar" MaxLength="50" />
+          <Property Name="Улица" Type="nvarchar" MaxLength="50" />
+          <Property Name="Дом" Type="nvarchar" MaxLength="50" />
+          <Property Name="Квартира" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID_user" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Питомцы">
+          <Key>
+            <PropertyRef Name="ID_питомца" />
+          </Key>
+          <Property Name="ID_питомца" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Кличка" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_вида" Type="int" Nullable="false" />
+          <Property Name="Порода" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Пол" Type="nvarchar" MaxLength="50" />
+          <Property Name="Дата_рождения" Type="date" />
+          <Property Name="Вес" Type="nvarchar" MaxLength="50" />
+          <Property Name="Рост" Type="nvarchar" MaxLength="50" />
+          <Property Name="Группа_крови" Type="nvarchar" MaxLength="50" />
+          <Property Name="Возраст" Type="nvarchar" MaxLength="50" />
+          <Property Name="Аллергии" Type="nvarchar(max)" />
+          <Property Name="Заболевания_хронический" Type="nvarchar(max)" />
+          <Property Name="Фото" Type="nvarchar(max)" />
+          <Property Name="ID_клиента" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Рабочее_время">
+          <Key>
+            <PropertyRef Name="ID_времени" />
+          </Key>
+          <Property Name="ID_времени" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_сотрудника" Type="int" Nullable="false" />
+          <Property Name="ID_услуги" Type="int" Nullable="false" />
+          <Property Name="Дата" Type="date" Nullable="false" />
+          <Property Name="Время_Начало" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Время_завершения" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Роли">
+          <Key>
+            <PropertyRef Name="ID_роли" />
+          </Key>
+          <Property Name="ID_роли" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Сотрудник">
+          <Key>
+            <PropertyRef Name="ID_сотрудника" />
+          </Key>
+          <Property Name="ID_сотрудника" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_user" Type="int" Nullable="false" />
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Отчество" Type="nvarchar" MaxLength="50" />
+          <Property Name="Образование" Type="nvarchar(max)" />
+          <Property Name="Должность" Type="nvarchar" MaxLength="50" />
+          <Property Name="Должность_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Должность_3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Опыт" Type="nvarchar" MaxLength="50" />
+          <Property Name="Фото" Type="nvarchar(max)" />
+          <Property Name="ID_статуса" Type="int" />
+        </EntityType>
+        <EntityType Name="Статус">
+          <Key>
+            <PropertyRef Name="ID_статуса" />
+          </Key>
+          <Property Name="ID_статуса" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Статус_записи">
+          <Key>
+            <PropertyRef Name="id_статус_записи" />
+          </Key>
+          <Property Name="id_статус_записи" Type="int" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Услуги">
+          <Key>
+            <PropertyRef Name="ID_услуги" />
+          </Key>
+          <Property Name="ID_услуги" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Стоимость" Type="nvarchar" MaxLength="50" />
+          <Property Name="Длительность" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID_категории" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_User_Роли">
+          <End Role="Роли" Type="Self.Роли" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Роли">
+              <PropertyRef Name="ID_роли" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ID_роли" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Питомцы">
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Питомцы">
+              <PropertyRef Name="ID_питомца" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="ID_питомца" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Рабочее_время">
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Рабочее_время">
+              <PropertyRef Name="ID_времени" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="ID_времени" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Статус_записи">
+          <End Role="Статус_записи" Type="Self.Статус_записи" Multiplicity="0..1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус_записи">
+              <PropertyRef Name="id_статус_записи" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="Статус_записи" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Клиенты_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID_user" />
+            </Principal>
+            <Dependent Role="Клиенты">
+              <PropertyRef Name="ID_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Питомцы_Категория_питомца">
+          <End Role="Категория_питомца" Type="Self.Категория_питомца" Multiplicity="1" />
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Категория_питомца">
+              <PropertyRef Name="ID_вида" />
+            </Principal>
+            <Dependent Role="Питомцы">
+              <PropertyRef Name="ID_вида" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Питомцы_Клиенты">
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиенты">
+              <PropertyRef Name="ID_клиента" />
+            </Principal>
+            <Dependent Role="Питомцы">
+              <PropertyRef Name="ID_клиента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Рабочее_время_Сотрудник">
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="1" />
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="ID_сотрудника" />
+            </Principal>
+            <Dependent Role="Рабочее_время">
+              <PropertyRef Name="ID_сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Рабочее_время_Услуги">
+          <End Role="Услуги" Type="Self.Услуги" Multiplicity="1" />
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги">
+              <PropertyRef Name="ID_услуги" />
+            </Principal>
+            <Dependent Role="Рабочее_время">
+              <PropertyRef Name="ID_услуги" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID_user" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="ID_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Статус">
+          <End Role="Статус" Type="Self.Статус" Multiplicity="0..1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус">
+              <PropertyRef Name="ID_статуса" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="ID_статуса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Услуги_Категория_услуг">
+          <End Role="Категория_услуг" Type="Self.Категория_услуг" Multiplicity="1" />
+          <End Role="Услуги" Type="Self.Услуги" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Категория_услуг">
+              <PropertyRef Name="ID_Категории" />
+            </Principal>
+            <Dependent Role="Услуги">
+              <PropertyRef Name="ID_категории" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Хранилище VetClinikumModelContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="История_посещений" EntityType="Self.История_посещений" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Категория_питомца" EntityType="Self.Категория_питомца" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Категория_услуг" EntityType="Self.Категория_услуг" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Клиенты" EntityType="Self.Клиенты" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Питомцы" EntityType="Self.Питомцы" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Рабочее_время" EntityType="Self.Рабочее_время" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Роли" EntityType="Self.Роли" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Сотрудник" EntityType="Self.Сотрудник" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Статус" EntityType="Self.Статус" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Статус_записи" EntityType="Self.Статус_записи" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Услуги" EntityType="Self.Услуги" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_User_Роли" Association="Self.FK_User_Роли">
+            <End Role="Роли" EntitySet="Роли" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Питомцы" Association="Self.FK_История_посещений_Питомцы">
+            <End Role="Питомцы" EntitySet="Питомцы" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Рабочее_время" Association="Self.FK_История_посещений_Рабочее_время">
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Статус_записи" Association="Self.FK_История_посещений_Статус_записи">
+            <End Role="Статус_записи" EntitySet="Статус_записи" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Клиенты_User" Association="Self.FK_Клиенты_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Клиенты" EntitySet="Клиенты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Питомцы_Категория_питомца" Association="Self.FK_Питомцы_Категория_питомца">
+            <End Role="Категория_питомца" EntitySet="Категория_питомца" />
+            <End Role="Питомцы" EntitySet="Питомцы" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Питомцы_Клиенты" Association="Self.FK_Питомцы_Клиенты">
+            <End Role="Клиенты" EntitySet="Клиенты" />
+            <End Role="Питомцы" EntitySet="Питомцы" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Рабочее_время_Сотрудник" Association="Self.FK_Рабочее_время_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Рабочее_время_Услуги" Association="Self.FK_Рабочее_время_Услуги">
+            <End Role="Услуги" EntitySet="Услуги" />
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_User" Association="Self.FK_Сотрудник_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Статус" Association="Self.FK_Сотрудник_Статус">
+            <End Role="Статус" EntitySet="Статус" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Услуги_Категория_услуг" Association="Self.FK_Услуги_Категория_услуг">
+            <End Role="Категория_услуг" EntitySet="Категория_услуг" />
+            <End Role="Услуги" EntitySet="Услуги" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VetClinikumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID_user" />
+          </Key>
+          <Property Name="ID_user" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Номер_телефона" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID_роли" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Роли" Relationship="Self.FK_User_Роли" FromRole="User" ToRole="Роли" />
+          <NavigationProperty Name="Клиенты" Relationship="Self.FK_Клиенты_User" FromRole="User" ToRole="Клиенты" />
+          <NavigationProperty Name="Сотрудник" Relationship="Self.FK_Сотрудник_User" FromRole="User" ToRole="Сотрудник" />
+        </EntityType>
+        <EntityType Name="История_посещений">
+          <Key>
+            <PropertyRef Name="ID_истории" />
+          </Key>
+          <Property Name="ID_истории" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_времени" Type="Int32" Nullable="false" />
+          <Property Name="ID_питомца" Type="Int32" Nullable="false" />
+          <Property Name="Время_записи" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Стоимость" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Статус_записи" Type="Int32" />
+          <Property Name="Коментарий" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Скан" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Скан_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Скан_3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Питомцы" Relationship="Self.FK_История_посещений_Питомцы" FromRole="История_посещений" ToRole="Питомцы" />
+          <NavigationProperty Name="Рабочее_время" Relationship="Self.FK_История_посещений_Рабочее_время" FromRole="История_посещений" ToRole="Рабочее_время" />
+          <NavigationProperty Name="Статус_записи1" Relationship="Self.FK_История_посещений_Статус_записи" FromRole="История_посещений" ToRole="Статус_записи" />
+        </EntityType>
+        <EntityType Name="Категория_питомца">
+          <Key>
+            <PropertyRef Name="ID_вида" />
+          </Key>
+          <Property Name="ID_вида" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Питомцы" Relationship="Self.FK_Питомцы_Категория_питомца" FromRole="Категория_питомца" ToRole="Питомцы" />
+        </EntityType>
+        <EntityType Name="Категория_услуг">
+          <Key>
+            <PropertyRef Name="ID_Категории" />
+          </Key>
+          <Property Name="ID_Категории" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Описание_услуг" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Фото" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Цена" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Услуги" Relationship="Self.FK_Услуги_Категория_услуг" FromRole="Категория_услуг" ToRole="Услуги" />
+        </EntityType>
+        <EntityType Name="Клиенты">
+          <Key>
+            <PropertyRef Name="ID_клиента" />
+          </Key>
+          <Property Name="ID_клиента" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Номер_телефона" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Электронная_почта" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Дата_рождения" Type="DateTime" Precision="0" />
+          <Property Name="Город" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Улица" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Дом" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Квартира" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_user" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Клиенты_User" FromRole="Клиенты" ToRole="User" />
+          <NavigationProperty Name="Питомцы" Relationship="Self.FK_Питомцы_Клиенты" FromRole="Клиенты" ToRole="Питомцы" />
+        </EntityType>
+        <EntityType Name="Питомцы">
+          <Key>
+            <PropertyRef Name="ID_питомца" />
+          </Key>
+          <Property Name="ID_питомца" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Кличка" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID_вида" Type="Int32" Nullable="false" />
+          <Property Name="Порода" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Пол" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Дата_рождения" Type="DateTime" Precision="0" />
+          <Property Name="Вес" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Рост" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Группа_крови" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Возраст" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Аллергии" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Заболевания_хронический" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Фото" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ID_клиента" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="История_посещений" Relationship="Self.FK_История_посещений_Питомцы" FromRole="Питомцы" ToRole="История_посещений" />
+          <NavigationProperty Name="Категория_питомца" Relationship="Self.FK_Питомцы_Категория_питомца" FromRole="Питомцы" ToRole="Категория_питомца" />
+          <NavigationProperty Name="Клиенты" Relationship="Self.FK_Питомцы_Клиенты" FromRole="Питомцы" ToRole="Клиенты" />
+        </EntityType>
+        <EntityType Name="Рабочее_время">
+          <Key>
+            <PropertyRef Name="ID_времени" />
+          </Key>
+          <Property Name="ID_времени" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_сотрудника" Type="Int32" Nullable="false" />
+          <Property Name="ID_услуги" Type="Int32" Nullable="false" />
+          <Property Name="Дата" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Время_Начало" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Время_завершения" Type="Time" Precision="7" />
+          <NavigationProperty Name="История_посещений" Relationship="Self.FK_История_посещений_Рабочее_время" FromRole="Рабочее_время" ToRole="История_посещений" />
+          <NavigationProperty Name="Сотрудник" Relationship="Self.FK_Рабочее_время_Сотрудник" FromRole="Рабочее_время" ToRole="Сотрудник" />
+          <NavigationProperty Name="Услуги" Relationship="Self.FK_Рабочее_время_Услуги" FromRole="Рабочее_время" ToRole="Услуги" />
+        </EntityType>
+        <EntityType Name="Роли">
+          <Key>
+            <PropertyRef Name="ID_роли" />
+          </Key>
+          <Property Name="ID_роли" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_Роли" FromRole="Роли" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Сотрудник">
+          <Key>
+            <PropertyRef Name="ID_сотрудника" />
+          </Key>
+          <Property Name="ID_сотрудника" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_user" Type="Int32" Nullable="false" />
+          <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Образование" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Должность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Должность_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Должность_3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Опыт" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Фото" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ID_статуса" Type="Int32" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Сотрудник_User" FromRole="Сотрудник" ToRole="User" />
+          <NavigationProperty Name="Рабочее_время" Relationship="Self.FK_Рабочее_время_Сотрудник" FromRole="Сотрудник" ToRole="Рабочее_время" />
+          <NavigationProperty Name="Статус" Relationship="Self.FK_Сотрудник_Статус" FromRole="Сотрудник" ToRole="Статус" />
+        </EntityType>
+        <EntityType Name="Статус">
+          <Key>
+            <PropertyRef Name="ID_статуса" />
+          </Key>
+          <Property Name="ID_статуса" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Сотрудник" Relationship="Self.FK_Сотрудник_Статус" FromRole="Статус" ToRole="Сотрудник" />
+        </EntityType>
+        <EntityType Name="Статус_записи">
+          <Key>
+            <PropertyRef Name="id_статус_записи" />
+          </Key>
+          <Property Name="id_статус_записи" Type="Int32" Nullable="false" />
+          <Property Name="Название" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="История_посещений" Relationship="Self.FK_История_посещений_Статус_записи" FromRole="Статус_записи" ToRole="История_посещений" />
+        </EntityType>
+        <EntityType Name="Услуги">
+          <Key>
+            <PropertyRef Name="ID_услуги" />
+          </Key>
+          <Property Name="ID_услуги" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Стоимость" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Длительность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_категории" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Категория_услуг" Relationship="Self.FK_Услуги_Категория_услуг" FromRole="Услуги" ToRole="Категория_услуг" />
+          <NavigationProperty Name="Рабочее_время" Relationship="Self.FK_Рабочее_время_Услуги" FromRole="Услуги" ToRole="Рабочее_время" />
+        </EntityType>
+        <Association Name="FK_User_Роли">
+          <End Role="Роли" Type="Self.Роли" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Роли">
+              <PropertyRef Name="ID_роли" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ID_роли" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Клиенты_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID_user" />
+            </Principal>
+            <Dependent Role="Клиенты">
+              <PropertyRef Name="ID_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID_user" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="ID_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Питомцы">
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Питомцы">
+              <PropertyRef Name="ID_питомца" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="ID_питомца" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Рабочее_время">
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Рабочее_время">
+              <PropertyRef Name="ID_времени" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="ID_времени" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_История_посещений_Статус_записи">
+          <End Role="Статус_записи" Type="Self.Статус_записи" Multiplicity="0..1" />
+          <End Role="История_посещений" Type="Self.История_посещений" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус_записи">
+              <PropertyRef Name="id_статус_записи" />
+            </Principal>
+            <Dependent Role="История_посещений">
+              <PropertyRef Name="Статус_записи" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Питомцы_Категория_питомца">
+          <End Role="Категория_питомца" Type="Self.Категория_питомца" Multiplicity="1" />
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Категория_питомца">
+              <PropertyRef Name="ID_вида" />
+            </Principal>
+            <Dependent Role="Питомцы">
+              <PropertyRef Name="ID_вида" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Услуги_Категория_услуг">
+          <End Role="Категория_услуг" Type="Self.Категория_услуг" Multiplicity="1" />
+          <End Role="Услуги" Type="Self.Услуги" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Категория_услуг">
+              <PropertyRef Name="ID_Категории" />
+            </Principal>
+            <Dependent Role="Услуги">
+              <PropertyRef Name="ID_категории" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Питомцы_Клиенты">
+          <End Role="Клиенты" Type="Self.Клиенты" Multiplicity="1" />
+          <End Role="Питомцы" Type="Self.Питомцы" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Клиенты">
+              <PropertyRef Name="ID_клиента" />
+            </Principal>
+            <Dependent Role="Питомцы">
+              <PropertyRef Name="ID_клиента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Рабочее_время_Сотрудник">
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="1" />
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="ID_сотрудника" />
+            </Principal>
+            <Dependent Role="Рабочее_время">
+              <PropertyRef Name="ID_сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Рабочее_время_Услуги">
+          <End Role="Услуги" Type="Self.Услуги" Multiplicity="1" />
+          <End Role="Рабочее_время" Type="Self.Рабочее_время" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Услуги">
+              <PropertyRef Name="ID_услуги" />
+            </Principal>
+            <Dependent Role="Рабочее_время">
+              <PropertyRef Name="ID_услуги" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Статус">
+          <End Role="Статус" Type="Self.Статус" Multiplicity="0..1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус">
+              <PropertyRef Name="ID_статуса" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="ID_статуса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="VetClinikumEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="История_посещений" EntityType="Self.История_посещений" />
+          <EntitySet Name="Категория_питомца" EntityType="Self.Категория_питомца" />
+          <EntitySet Name="Категория_услуг" EntityType="Self.Категория_услуг" />
+          <EntitySet Name="Клиенты" EntityType="Self.Клиенты" />
+          <EntitySet Name="Питомцы" EntityType="Self.Питомцы" />
+          <EntitySet Name="Рабочее_время" EntityType="Self.Рабочее_время" />
+          <EntitySet Name="Роли" EntityType="Self.Роли" />
+          <EntitySet Name="Сотрудник" EntityType="Self.Сотрудник" />
+          <EntitySet Name="Статус" EntityType="Self.Статус" />
+          <EntitySet Name="Статус_записи" EntityType="Self.Статус_записи" />
+          <EntitySet Name="Услуги" EntityType="Self.Услуги" />
+          <AssociationSet Name="FK_User_Роли" Association="Self.FK_User_Роли">
+            <End Role="Роли" EntitySet="Роли" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Клиенты_User" Association="Self.FK_Клиенты_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Клиенты" EntitySet="Клиенты" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_User" Association="Self.FK_Сотрудник_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Питомцы" Association="Self.FK_История_посещений_Питомцы">
+            <End Role="Питомцы" EntitySet="Питомцы" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Рабочее_время" Association="Self.FK_История_посещений_Рабочее_время">
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_История_посещений_Статус_записи" Association="Self.FK_История_посещений_Статус_записи">
+            <End Role="Статус_записи" EntitySet="Статус_записи" />
+            <End Role="История_посещений" EntitySet="История_посещений" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Питомцы_Категория_питомца" Association="Self.FK_Питомцы_Категория_питомца">
+            <End Role="Категория_питомца" EntitySet="Категория_питомца" />
+            <End Role="Питомцы" EntitySet="Питомцы" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Услуги_Категория_услуг" Association="Self.FK_Услуги_Категория_услуг">
+            <End Role="Категория_услуг" EntitySet="Категория_услуг" />
+            <End Role="Услуги" EntitySet="Услуги" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Питомцы_Клиенты" Association="Self.FK_Питомцы_Клиенты">
+            <End Role="Клиенты" EntitySet="Клиенты" />
+            <End Role="Питомцы" EntitySet="Питомцы" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Рабочее_время_Сотрудник" Association="Self.FK_Рабочее_время_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Рабочее_время_Услуги" Association="Self.FK_Рабочее_время_Услуги">
+            <End Role="Услуги" EntitySet="Услуги" />
+            <End Role="Рабочее_время" EntitySet="Рабочее_время" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Статус" Association="Self.FK_Сотрудник_Статус">
+            <End Role="Статус" EntitySet="Статус" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(VetClinikumModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(VetClinikumModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище VetClinikumModelContainer" CdmEntityContainer="VetClinikumEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="VetClinikumModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="VetClinikumModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="ID_user" ColumnName="ID_user" />
+                <ScalarProperty Name="Номер_телефона" ColumnName="Номер_телефона" />
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+                <ScalarProperty Name="ID_роли" ColumnName="ID_роли" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="История_посещений">
+            <EntityTypeMapping TypeName="VetClinikumModel.История_посещений">
+              <MappingFragment StoreEntitySet="История_посещений">
+                <ScalarProperty Name="ID_истории" ColumnName="ID_истории" />
+                <ScalarProperty Name="ID_времени" ColumnName="ID_времени" />
+                <ScalarProperty Name="ID_питомца" ColumnName="ID_питомца" />
+                <ScalarProperty Name="Время_записи" ColumnName="Время_записи" />
+                <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+                <ScalarProperty Name="Статус_записи" ColumnName="Статус_записи" />
+                <ScalarProperty Name="Коментарий" ColumnName="Коментарий" />
+                <ScalarProperty Name="Скан" ColumnName="Скан" />
+                <ScalarProperty Name="Скан_2" ColumnName="Скан_2" />
+                <ScalarProperty Name="Скан_3" ColumnName="Скан_3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Категория_питомца">
+            <EntityTypeMapping TypeName="VetClinikumModel.Категория_питомца">
+              <MappingFragment StoreEntitySet="Категория_питомца">
+                <ScalarProperty Name="ID_вида" ColumnName="ID_вида" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Категория_услуг">
+            <EntityTypeMapping TypeName="VetClinikumModel.Категория_услуг">
+              <MappingFragment StoreEntitySet="Категория_услуг">
+                <ScalarProperty Name="ID_Категории" ColumnName="ID_Категории" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Описание_услуг" ColumnName="Описание_услуг" />
+                <ScalarProperty Name="Фото" ColumnName="Фото" />
+                <ScalarProperty Name="Цена" ColumnName="Цена" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Клиенты">
+            <EntityTypeMapping TypeName="VetClinikumModel.Клиенты">
+              <MappingFragment StoreEntitySet="Клиенты">
+                <ScalarProperty Name="ID_клиента" ColumnName="ID_клиента" />
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+                <ScalarProperty Name="Номер_телефона" ColumnName="Номер_телефона" />
+                <ScalarProperty Name="Электронная_почта" ColumnName="Электронная_почта" />
+                <ScalarProperty Name="Дата_рождения" ColumnName="Дата_рождения" />
+                <ScalarProperty Name="Город" ColumnName="Город" />
+                <ScalarProperty Name="Улица" ColumnName="Улица" />
+                <ScalarProperty Name="Дом" ColumnName="Дом" />
+                <ScalarProperty Name="Квартира" ColumnName="Квартира" />
+                <ScalarProperty Name="ID_user" ColumnName="ID_user" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Питомцы">
+            <EntityTypeMapping TypeName="VetClinikumModel.Питомцы">
+              <MappingFragment StoreEntitySet="Питомцы">
+                <ScalarProperty Name="ID_питомца" ColumnName="ID_питомца" />
+                <ScalarProperty Name="Кличка" ColumnName="Кличка" />
+                <ScalarProperty Name="ID_вида" ColumnName="ID_вида" />
+                <ScalarProperty Name="Порода" ColumnName="Порода" />
+                <ScalarProperty Name="Пол" ColumnName="Пол" />
+                <ScalarProperty Name="Дата_рождения" ColumnName="Дата_рождения" />
+                <ScalarProperty Name="Вес" ColumnName="Вес" />
+                <ScalarProperty Name="Рост" ColumnName="Рост" />
+                <ScalarProperty Name="Группа_крови" ColumnName="Группа_крови" />
+                <ScalarProperty Name="Возраст" ColumnName="Возраст" />
+                <ScalarProperty Name="Аллергии" ColumnName="Аллергии" />
+                <ScalarProperty Name="Заболевания_хронический" ColumnName="Заболевания_хронический" />
+                <ScalarProperty Name="Фото" ColumnName="Фото" />
+                <ScalarProperty Name="ID_клиента" ColumnName="ID_клиента" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Рабочее_время">
+            <EntityTypeMapping TypeName="VetClinikumModel.Рабочее_время">
+              <MappingFragment StoreEntitySet="Рабочее_время">
+                <ScalarProperty Name="ID_времени" ColumnName="ID_времени" />
+                <ScalarProperty Name="ID_сотрудника" ColumnName="ID_сотрудника" />
+                <ScalarProperty Name="ID_услуги" ColumnName="ID_услуги" />
+                <ScalarProperty Name="Дата" ColumnName="Дата" />
+                <ScalarProperty Name="Время_Начало" ColumnName="Время_Начало" />
+                <ScalarProperty Name="Время_завершения" ColumnName="Время_завершения" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Роли">
+            <EntityTypeMapping TypeName="VetClinikumModel.Роли">
+              <MappingFragment StoreEntitySet="Роли">
+                <ScalarProperty Name="ID_роли" ColumnName="ID_роли" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Сотрудник">
+            <EntityTypeMapping TypeName="VetClinikumModel.Сотрудник">
+              <MappingFragment StoreEntitySet="Сотрудник">
+                <ScalarProperty Name="ID_сотрудника" ColumnName="ID_сотрудника" />
+                <ScalarProperty Name="ID_user" ColumnName="ID_user" />
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+                <ScalarProperty Name="Образование" ColumnName="Образование" />
+                <ScalarProperty Name="Должность" ColumnName="Должность" />
+                <ScalarProperty Name="Должность_2" ColumnName="Должность_2" />
+                <ScalarProperty Name="Должность_3" ColumnName="Должность_3" />
+                <ScalarProperty Name="Опыт" ColumnName="Опыт" />
+                <ScalarProperty Name="Фото" ColumnName="Фото" />
+                <ScalarProperty Name="ID_статуса" ColumnName="ID_статуса" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Статус">
+            <EntityTypeMapping TypeName="VetClinikumModel.Статус">
+              <MappingFragment StoreEntitySet="Статус">
+                <ScalarProperty Name="ID_статуса" ColumnName="ID_статуса" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Статус_записи">
+            <EntityTypeMapping TypeName="VetClinikumModel.Статус_записи">
+              <MappingFragment StoreEntitySet="Статус_записи">
+                <ScalarProperty Name="id_статус_записи" ColumnName="id_статус_записи" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Услуги">
+            <EntityTypeMapping TypeName="VetClinikumModel.Услуги">
+              <MappingFragment StoreEntitySet="Услуги">
+                <ScalarProperty Name="ID_услуги" ColumnName="ID_услуги" />
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+                <ScalarProperty Name="Длительность" ColumnName="Длительность" />
+                <ScalarProperty Name="ID_категории" ColumnName="ID_категории" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище VetClinikumModel.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище VetClinikumModel.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище VetClinikumModel.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище VetClinikumModel.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="VetClinikumModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище VetClinikumModel.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="VetClinikumModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище VetClinikumModel.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище VetClinikumModel.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

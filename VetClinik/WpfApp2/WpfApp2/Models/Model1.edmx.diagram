@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9634b5c2470a43dfaddd63d6b54c49e2" Name="Diagram1">
+        <EntityTypeShape EntityType="VetClinikumModel.sysdiagram" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.User" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.История_посещений" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Категория_питомца" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Категория_услуг" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Клиенты" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Питомцы" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Рабочее_время" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Роли" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Сотрудник" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Статус" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Статус_записи" Width="1.5" PointX="7.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetClinikumModel.Услуги" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <AssociationConnector Association="VetClinikumModel.FK_User_Роли" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Клиенты_User" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Сотрудник_User" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_История_посещений_Питомцы" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_История_посещений_Рабочее_время" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_История_посещений_Статус_записи" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Питомцы_Категория_питомца" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Услуги_Категория_услуг" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Питомцы_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Рабочее_время_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Рабочее_время_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="VetClinikumModel.FK_Сотрудник_Статус" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
